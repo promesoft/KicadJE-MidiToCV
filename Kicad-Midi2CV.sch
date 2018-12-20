@@ -621,4 +621,27 @@ Wire Wire Line
 	1550 2600 1950 2600
 Wire Wire Line
 	1550 2400 1600 2400
+$Comp
+L Device:Rotary_Encoder_Switch SW?
+U 1 1 5C253AC2
+P 3200 5300
+F 0 "SW?" H 3200 4933 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 3200 5024 50  0000 C CNN
+F 2 "" H 3050 5460 50  0001 C CNN
+F 3 "~" H 3200 5560 50  0001 C CNN
+	1    3200 5300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3500 5200 4200 5200
+Wire Wire Line
+	4200 5200 4200 3200
+Wire Wire Line
+	4200 3200 4600 3200
+Wire Wire Line
+	4600 3300 4300 3300
+Wire Wire Line
+	4300 3300 4300 5400
+Wire Wire Line
+	3500 5400 4300 5400
 $EndSCHEMATC
