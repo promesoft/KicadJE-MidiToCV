@@ -57,7 +57,7 @@ U 1 1 5C1C0BCC
 P 1250 2500
 F 0 "J?" H 1250 2226 50  0000 C CNN
 F 1 "DIN-5" H 1250 2135 50  0000 C CNN
-F 2 "" H 1250 2500 50  0001 C CNN
+F 2 "w_conn_av:din-5" H 1250 2500 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 1250 2500 50  0001 C CNN
 	1    1250 2500
 	1    0    0    -1  

@@ -54,12 +54,12 @@ $EndComp
 $Comp
 L Connector:DIN-5 J?
 U 1 1 5C1C0BCC
-P 1300 2750
-F 0 "J?" H 1300 2476 50  0000 C CNN
-F 1 "DIN-5" H 1300 2385 50  0000 C CNN
-F 2 "" H 1300 2750 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 1300 2750 50  0001 C CNN
-	1    1300 2750
+P 1250 2500
+F 0 "J?" H 1250 2226 50  0000 C CNN
+F 1 "DIN-5" H 1250 2135 50  0000 C CNN
+F 2 "" H 1250 2500 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 1250 2500 50  0001 C CNN
+	1    1250 2500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -132,12 +132,6 @@ Wire Wire Line
 	5900 3400 5900 4700
 Wire Wire Line
 	2550 2400 2800 2400
-Wire Wire Line
-	1950 2600 1600 2600
-Wire Wire Line
-	1600 2600 1600 2650
-Wire Wire Line
-	1000 2400 1000 2650
 Wire Wire Line
 	6000 3300 5600 3300
 Wire Wire Line
@@ -243,18 +237,14 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 5C1CFCF0
-P 1700 2400
-F 0 "R?" V 1493 2400 50  0000 C CNN
-F 1 "680R" V 1584 2400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1630 2400 50  0001 C CNN
-F 3 "~" H 1700 2400 50  0001 C CNN
-	1    1700 2400
+P 1750 2400
+F 0 "R?" V 1543 2400 50  0000 C CNN
+F 1 "220R" V 1634 2400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1680 2400 50  0001 C CNN
+F 3 "~" H 1750 2400 50  0001 C CNN
+	1    1750 2400
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	1850 2400 1950 2400
-Wire Wire Line
-	1000 2400 1550 2400
 Wire Wire Line
 	3200 3850 3000 3850
 Wire Wire Line
@@ -625,4 +615,10 @@ Wire Notes Line
 	3600 5850 850  5850
 Wire Notes Line
 	850  5850 850  3400
+Wire Wire Line
+	1900 2400 1950 2400
+Wire Wire Line
+	1550 2600 1950 2600
+Wire Wire Line
+	1550 2400 1600 2400
 $EndSCHEMATC
