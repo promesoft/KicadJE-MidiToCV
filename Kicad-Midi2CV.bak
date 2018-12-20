@@ -1,4 +1,172 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 26 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A1
+U 1 1 5C1C06D8
+P 5325 3950
+F 0 "A1" H 5325 2864 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 5325 2773 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 5475 3000 50  0001 L CNN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 5325 2950 50  0001 C CNN
+	1    5325 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:EL814 U2
+U 1 1 5C1C075E
+P 3275 1700
+F 0 "U2" H 3275 2025 50  0000 C CNN
+F 1 "EL814" H 3275 1934 50  0000 C CNN
+F 2 "" H 3075 1500 50  0001 L CIN
+F 3 "http://www.everlight.com/file/ProductFile/EL814.pdf" H 3300 1700 50  0001 L CNN
+	1    3275 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MMBT2222A:MMBT2222A Q?
+U 1 1 5C1C0AF7
+P 4000 1800
+F 0 "Q?" H 4141 1846 50  0000 L CNN
+F 1 "MMBT2222A" H 4141 1755 50  0000 L CNN
+F 2 "SOT23" H 4000 1800 50  0001 L BNN
+F 3 "Unavailable" H 4000 1800 50  0001 L BNN
+F 4 "None" H 4000 1800 50  0001 L BNN "Field4"
+F 5 "ON" H 4000 1800 50  0001 L BNN "Field5"
+F 6 "" H 4000 1800 50  0001 L BNN "Field6"
+F 7 "MMBT2222A" H 4000 1800 50  0001 L BNN "Field7"
+F 8 "TO-236-3 Taitron" H 4000 1800 50  0001 L BNN "Field8"
+	1    4000 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:DIN-5 J?
+U 1 1 5C1C0BCC
+P 2350 2425
+F 0 "J?" H 2350 2151 50  0000 C CNN
+F 1 "DIN-5" H 2350 2060 50  0000 C CNN
+F 2 "" H 2350 2425 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 2350 2425 50  0001 C CNN
+	1    2350 2425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Analog_DAC:MCP4728 U?
+U 1 1 5C1C0F59
+P 7475 5825
+F 0 "U?" H 7475 6303 50  0000 C CNN
+F 1 "MCP4728" H 7475 6212 50  0000 C CNN
+F 2 "Package_SO:MSOP-10_3x3mm_P0.5mm" H 7475 5225 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22187E.pdf" H 7475 6075 50  0001 C CNN
+	1    7475 5825
+	1    0    0    -1  
+$EndComp
+$Comp
+L aj_adc_dac:MCP4725module IC?
+U 1 1 5C1C16C6
+P 7450 4450
+F 0 "IC?" H 8241 4503 60  0000 L CNN
+F 1 "MCP4725module" H 8241 4397 60  0000 L CNN
+F 2 "" H 7450 4450 50  0001 C CNN
+F 3 "" H 7450 4450 50  0001 C CNN
+	1    7450 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5825 4450 6150 4450
+Wire Wire Line
+	6250 5825 6250 4350
+Wire Wire Line
+	5825 4350 6250 4350
+Connection ~ 6250 4350
+$Comp
+L Device:R R?
+U 1 1 5C1C2A80
+P 6150 4000
+F 0 "R?" V 5943 4000 50  0000 C CNN
+F 1 "R" V 6034 4000 50  0000 C CNN
+F 2 "" V 6080 4000 50  0001 C CNN
+F 3 "~" H 6150 4000 50  0001 C CNN
+	1    6150 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C1C2A86
+P 6250 4000
+F 0 "R?" V 6043 4000 50  0000 C CNN
+F 1 "R" V 6134 4000 50  0000 C CNN
+F 2 "" V 6180 4000 50  0001 C CNN
+F 3 "~" H 6250 4000 50  0001 C CNN
+	1    6250 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8075 5725 8075 4350
+Wire Wire Line
+	8075 4350 8000 4350
+$Comp
+L aj_adc_dac:MCP4725module IC?
+U 1 1 5C1C326B
+P 7450 3425
+F 0 "IC?" H 8241 3478 60  0000 L CNN
+F 1 "MCP4725module" H 8241 3372 60  0000 L CNN
+F 2 "" H 7450 3425 50  0001 C CNN
+F 3 "" H 7450 3425 50  0001 C CNN
+	1    7450 3425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 4150 6250 4350
+Wire Wire Line
+	6150 4150 6150 4450
+Connection ~ 6150 4450
+Wire Wire Line
+	6150 4450 6150 5725
+Wire Wire Line
+	6250 3850 6250 3800
+Wire Wire Line
+	6250 3800 6150 3800
+Wire Wire Line
+	6150 3800 6150 3850
+Wire Wire Line
+	6600 4350 6600 3325
+Wire Wire Line
+	6600 3325 6900 3325
+Connection ~ 6600 4350
+Wire Wire Line
+	6600 4350 6900 4350
+Wire Wire Line
+	6675 4450 6675 3425
+Wire Wire Line
+	6675 3425 6900 3425
+Connection ~ 6675 4450
+Wire Wire Line
+	6675 4450 6900 4450
+Wire Wire Line
+	6150 5725 6875 5725
+Wire Wire Line
+	6250 5825 6875 5825
+Wire Wire Line
+	6150 4450 6675 4450
+Wire Wire Line
+	6250 4350 6600 4350
+Wire Wire Line
+	8075 5825 8200 5825
+Wire Wire Line
+	8200 5825 8200 3325
+Wire Wire Line
+	8200 3325 8000 3325
 $EndSCHEMATC

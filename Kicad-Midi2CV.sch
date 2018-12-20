@@ -16,61 +16,61 @@ $EndDescr
 $Comp
 L MCU_Module:Arduino_Nano_v3.x A1
 U 1 1 5C1C06D8
-P 5325 3950
-F 0 "A1" H 5325 2864 50  0000 C CNN
-F 1 "Arduino_Nano_v3.x" H 5325 2773 50  0000 C CNN
-F 2 "Module:Arduino_Nano" H 5475 3000 50  0001 L CNN
-F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 5325 2950 50  0001 C CNN
-	1    5325 3950
+P 5350 3850
+F 0 "A1" H 5350 2764 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 5350 2673 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 5500 2900 50  0001 L CNN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 5350 2850 50  0001 C CNN
+	1    5350 3850
 	1    0    0    -1  
 $EndComp
 $Comp
 L Isolator:EL814 U2
 U 1 1 5C1C075E
-P 3275 1700
-F 0 "U2" H 3275 2025 50  0000 C CNN
-F 1 "EL814" H 3275 1934 50  0000 C CNN
-F 2 "" H 3075 1500 50  0001 L CIN
-F 3 "http://www.everlight.com/file/ProductFile/EL814.pdf" H 3300 1700 50  0001 L CNN
-	1    3275 1700
+P 3250 3550
+F 0 "U2" H 3250 3875 50  0000 C CNN
+F 1 "EL814" H 3250 3784 50  0000 C CNN
+F 2 "" H 3050 3350 50  0001 L CIN
+F 3 "http://www.everlight.com/file/ProductFile/EL814.pdf" H 3275 3550 50  0001 L CNN
+	1    3250 3550
 	1    0    0    -1  
 $EndComp
 $Comp
 L MMBT2222A:MMBT2222A Q?
 U 1 1 5C1C0AF7
-P 4000 1800
-F 0 "Q?" H 4141 1846 50  0000 L CNN
-F 1 "MMBT2222A" H 4141 1755 50  0000 L CNN
-F 2 "SOT23" H 4000 1800 50  0001 L BNN
-F 3 "Unavailable" H 4000 1800 50  0001 L BNN
-F 4 "None" H 4000 1800 50  0001 L BNN "Field4"
-F 5 "ON" H 4000 1800 50  0001 L BNN "Field5"
-F 6 "" H 4000 1800 50  0001 L BNN "Field6"
-F 7 "MMBT2222A" H 4000 1800 50  0001 L BNN "Field7"
-F 8 "TO-236-3 Taitron" H 4000 1800 50  0001 L BNN "Field8"
-	1    4000 1800
+P 4000 3650
+F 0 "Q?" H 4141 3696 50  0000 L CNN
+F 1 "MMBT2222A" H 4141 3605 50  0000 L CNN
+F 2 "SOT23" H 4000 3650 50  0001 L BNN
+F 3 "Unavailable" H 4000 3650 50  0001 L BNN
+F 4 "None" H 4000 3650 50  0001 L BNN "Field4"
+F 5 "ON" H 4000 3650 50  0001 L BNN "Field5"
+F 6 "" H 4000 3650 50  0001 L BNN "Field6"
+F 7 "MMBT2222A" H 4000 3650 50  0001 L BNN "Field7"
+F 8 "TO-236-3 Taitron" H 4000 3650 50  0001 L BNN "Field8"
+	1    4000 3650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:DIN-5 J?
 U 1 1 5C1C0BCC
-P 2350 2425
-F 0 "J?" H 2350 2151 50  0000 C CNN
-F 1 "DIN-5" H 2350 2060 50  0000 C CNN
-F 2 "" H 2350 2425 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 2350 2425 50  0001 C CNN
-	1    2350 2425
+P 2300 3800
+F 0 "J?" H 2300 3526 50  0000 C CNN
+F 1 "DIN-5" H 2300 3435 50  0000 C CNN
+F 2 "" H 2300 3800 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 2300 3800 50  0001 C CNN
+	1    2300 3800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Analog_DAC:MCP4728 U?
 U 1 1 5C1C0F59
-P 7475 5825
-F 0 "U?" H 7475 6303 50  0000 C CNN
-F 1 "MCP4728" H 7475 6212 50  0000 C CNN
-F 2 "Package_SO:MSOP-10_3x3mm_P0.5mm" H 7475 5225 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22187E.pdf" H 7475 6075 50  0001 C CNN
-	1    7475 5825
+P 7450 5850
+F 0 "U?" H 7450 6328 50  0000 C CNN
+F 1 "MCP4728" H 7450 6237 50  0000 C CNN
+F 2 "Package_SO:MSOP-10_3x3mm_P0.5mm" H 7450 5250 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22187E.pdf" H 7450 6100 50  0001 C CNN
+	1    7450 5850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -84,12 +84,6 @@ F 3 "" H 7450 4450 50  0001 C CNN
 	1    7450 4450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5825 4450 6150 4450
-Wire Wire Line
-	6250 5825 6250 4350
-Wire Wire Line
-	5825 4350 6250 4350
 Connection ~ 6250 4350
 $Comp
 L Device:R R?
@@ -114,8 +108,6 @@ F 3 "~" H 6250 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8075 5725 8075 4350
-Wire Wire Line
 	8075 4350 8000 4350
 $Comp
 L aj_adc_dac:MCP4725module IC?
@@ -133,8 +125,6 @@ Wire Wire Line
 Wire Wire Line
 	6150 4150 6150 4450
 Connection ~ 6150 4450
-Wire Wire Line
-	6150 4450 6150 5725
 Wire Wire Line
 	6250 3850 6250 3800
 Wire Wire Line
@@ -156,17 +146,285 @@ Connection ~ 6675 4450
 Wire Wire Line
 	6675 4450 6900 4450
 Wire Wire Line
-	6150 5725 6875 5725
-Wire Wire Line
-	6250 5825 6875 5825
-Wire Wire Line
 	6150 4450 6675 4450
 Wire Wire Line
 	6250 4350 6600 4350
 Wire Wire Line
-	8075 5825 8200 5825
-Wire Wire Line
-	8200 5825 8200 3325
-Wire Wire Line
 	8200 3325 8000 3325
+$Comp
+L Device:R R?
+U 1 1 5C1C503F
+P 4100 3175
+F 0 "R?" V 3893 3175 50  0000 C CNN
+F 1 "R" V 3984 3175 50  0000 C CNN
+F 2 "" V 4030 3175 50  0001 C CNN
+F 3 "~" H 4100 3175 50  0001 C CNN
+	1    4100 3175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C1C510F
+P 3725 3925
+F 0 "R?" V 3518 3925 50  0000 C CNN
+F 1 "R" V 3609 3925 50  0000 C CNN
+F 2 "" V 3655 3925 50  0001 C CNN
+F 3 "~" H 3725 3925 50  0001 C CNN
+	1    3725 3925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3725 3775 3725 3650
+Connection ~ 3725 3650
+Wire Wire Line
+	3725 3650 3900 3650
+Wire Wire Line
+	4100 3850 4100 4225
+Wire Wire Line
+	4100 4225 3725 4225
+Wire Wire Line
+	3725 4225 3725 4075
+Wire Wire Line
+	4100 3450 4100 3350
+Wire Wire Line
+	3800 3450 3800 2900
+Wire Wire Line
+	3800 2900 4100 2900
+Wire Wire Line
+	4100 2900 4100 3025
+Connection ~ 4100 3350
+Wire Wire Line
+	4100 3350 4100 3325
+Wire Wire Line
+	8050 5850 8200 5850
+Wire Wire Line
+	8200 3325 8200 5850
+Wire Wire Line
+	8075 5750 8050 5750
+Wire Wire Line
+	8075 4350 8075 5750
+Wire Wire Line
+	6250 5850 6850 5850
+Wire Wire Line
+	6250 4350 6250 5850
+Wire Wire Line
+	6150 5750 6850 5750
+Wire Wire Line
+	6150 4450 6150 5750
+Wire Wire Line
+	3550 3450 3800 3450
+Wire Wire Line
+	3550 3650 3725 3650
+Wire Wire Line
+	2950 3650 2600 3650
+Wire Wire Line
+	2600 3650 2600 3700
+Wire Wire Line
+	2000 3450 2000 3700
+Wire Wire Line
+	4100 3350 4850 3350
+Wire Wire Line
+	6250 4350 5850 4350
+Wire Wire Line
+	6150 4450 5850 4450
+Wire Wire Line
+	4850 4550 4850 5950
+Wire Wire Line
+	4850 5950 6850 5950
+Wire Wire Line
+	6850 6050 4750 6050
+Wire Wire Line
+	4750 4450 4750 6050
+Wire Wire Line
+	4750 4450 4850 4450
+$Comp
+L Device:LED D?
+U 1 1 5C1CEEC6
+P 3400 4900
+F 0 "D?" H 3391 5116 50  0000 C CNN
+F 1 "LED" H 3391 5025 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm_Horizontal_O6.35mm_Z6.0mm" H 3400 4900 50  0001 C CNN
+F 3 "~" H 3400 4900 50  0001 C CNN
+	1    3400 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5C1CEF6A
+P 3400 5200
+F 0 "D?" H 3391 5416 50  0000 C CNN
+F 1 "LED" H 3391 5325 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm_Horizontal_O6.35mm_Z6.0mm" H 3400 5200 50  0001 C CNN
+F 3 "~" H 3400 5200 50  0001 C CNN
+	1    3400 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5C1CF002
+P 3400 5550
+F 0 "D?" H 3391 5766 50  0000 C CNN
+F 1 "LED" H 3391 5675 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm_Horizontal_O6.35mm_Z6.0mm" H 3400 5550 50  0001 C CNN
+F 3 "~" H 3400 5550 50  0001 C CNN
+	1    3400 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5C1CF008
+P 3400 5850
+F 0 "D?" H 3391 6066 50  0000 C CNN
+F 1 "LED" H 3391 5975 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm_Horizontal_O6.35mm_Z6.0mm" H 3400 5850 50  0001 C CNN
+F 3 "~" H 3400 5850 50  0001 C CNN
+	1    3400 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C1CFAFB
+P 3850 4900
+F 0 "R?" V 3643 4900 50  0000 C CNN
+F 1 "680R" V 3734 4900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3780 4900 50  0001 C CNN
+F 3 "~" H 3850 4900 50  0001 C CNN
+	1    3850 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C1CFC0E
+P 3850 5200
+F 0 "R?" V 3643 5200 50  0000 C CNN
+F 1 "680R" V 3734 5200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3780 5200 50  0001 C CNN
+F 3 "~" H 3850 5200 50  0001 C CNN
+	1    3850 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C1CFC52
+P 3850 5550
+F 0 "R?" V 3643 5550 50  0000 C CNN
+F 1 "680R" V 3734 5550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3780 5550 50  0001 C CNN
+F 3 "~" H 3850 5550 50  0001 C CNN
+	1    3850 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C1CFCA2
+P 3850 5850
+F 0 "R?" V 3643 5850 50  0000 C CNN
+F 1 "680R" V 3734 5850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3780 5850 50  0001 C CNN
+F 3 "~" H 3850 5850 50  0001 C CNN
+	1    3850 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C1CFCF0
+P 2700 3450
+F 0 "R?" V 2493 3450 50  0000 C CNN
+F 1 "680R" V 2584 3450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2630 3450 50  0001 C CNN
+F 3 "~" H 2700 3450 50  0001 C CNN
+	1    2700 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 3450 2950 3450
+Wire Wire Line
+	2000 3450 2550 3450
+Wire Wire Line
+	4850 3450 4200 3450
+Wire Wire Line
+	4200 3450 4200 4900
+Wire Wire Line
+	4200 4900 4000 4900
+Wire Wire Line
+	4850 3550 4300 3550
+Wire Wire Line
+	4300 3550 4300 5200
+Wire Wire Line
+	4300 5200 4000 5200
+Wire Wire Line
+	4850 3650 4400 3650
+Wire Wire Line
+	4400 3650 4400 5550
+Wire Wire Line
+	4400 5550 4000 5550
+Wire Wire Line
+	4850 3750 4500 3750
+Wire Wire Line
+	4500 3750 4500 5850
+Wire Wire Line
+	4500 5850 4000 5850
+Wire Wire Line
+	3700 4900 3550 4900
+Wire Wire Line
+	3700 5200 3550 5200
+Wire Wire Line
+	3700 5550 3550 5550
+Wire Wire Line
+	3700 5850 3550 5850
+$Comp
+L power:GND #PWR?
+U 1 1 5C1D9D12
+P 3050 6000
+F 0 "#PWR?" H 3050 5750 50  0001 C CNN
+F 1 "GND" H 3055 5827 50  0000 C CNN
+F 2 "" H 3050 6000 50  0001 C CNN
+F 3 "" H 3050 6000 50  0001 C CNN
+	1    3050 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C1D9DC0
+P 7450 6350
+F 0 "#PWR?" H 7450 6100 50  0001 C CNN
+F 1 "GND" H 7455 6177 50  0000 C CNN
+F 2 "" H 7450 6350 50  0001 C CNN
+F 3 "" H 7450 6350 50  0001 C CNN
+	1    7450 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C1D9DFA
+P 7450 4900
+F 0 "#PWR?" H 7450 4650 50  0001 C CNN
+F 1 "GND" H 7455 4727 50  0000 C CNN
+F 2 "" H 7450 4900 50  0001 C CNN
+F 3 "" H 7450 4900 50  0001 C CNN
+	1    7450 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C1D9E7D
+P 7450 3850
+F 0 "#PWR?" H 7450 3600 50  0001 C CNN
+F 1 "GND" H 7455 3677 50  0000 C CNN
+F 2 "" H 7450 3850 50  0001 C CNN
+F 3 "" H 7450 3850 50  0001 C CNN
+	1    7450 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C1D9F00
+P 5400 5100
+F 0 "#PWR?" H 5400 4850 50  0001 C CNN
+F 1 "GND" H 5405 4927 50  0000 C CNN
+F 2 "" H 5400 5100 50  0001 C CNN
+F 3 "" H 5400 5100 50  0001 C CNN
+	1    5400 5100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
