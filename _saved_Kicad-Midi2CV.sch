@@ -25,12 +25,12 @@ F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 5100 1800 50
 	1    0    0    -1  
 $EndComp
 $Comp
-L Isolator:EL814 U2
+L Isolator:EL814 U1
 U 1 1 5C1C075E
 P 2250 2500
-F 0 "U2" H 2250 2825 50  0000 C CNN
+F 0 "U1" H 2250 2825 50  0000 C CNN
 F 1 "EL814" H 2250 2734 50  0000 C CNN
-F 2 "OptoDevice:Panasonic_APV-AQY_SSOP-4_4.45x2.65mm_P1.27mm" H 2050 2300 50  0001 L CIN
+F 2 "Package_DIP:DIP-4_W7.62mm_LongPads" H 2050 2300 50  0001 L CIN
 F 3 "http://www.everlight.com/file/ProductFile/EL814.pdf" H 2275 2500 50  0001 L CNN
 	1    2250 2500
 	1    0    0    -1  
@@ -62,10 +62,10 @@ F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 1250 2500 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Analog_DAC:MCP4728 U1
+L Analog_DAC:MCP4728 U2
 U 1 1 5C1C0F59
 P 7200 4800
-F 0 "U1" H 7200 5278 50  0000 C CNN
+F 0 "U2" H 7200 5278 50  0000 C CNN
 F 1 "MCP4728" H 7200 5187 50  0000 C CNN
 F 2 "Package_SO:MSOP-10_3x3mm_P0.5mm" H 7200 4200 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22187E.pdf" H 7200 5050 50  0001 C CNN
@@ -486,7 +486,7 @@ U 1 1 5C21A17B
 P 6000 1800
 F 0 "J2" H 6080 1792 50  0000 L CNN
 F 1 "Conn_01x04" H 6080 1701 50  0000 L CNN
-F 2 "" H 6000 1800 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6000 1800 50  0001 C CNN
 F 3 "~" H 6000 1800 50  0001 C CNN
 	1    6000 1800
 	1    0    0    -1  
@@ -643,4 +643,10 @@ Wire Wire Line
 	4300 3300 4300 5400
 Wire Wire Line
 	3500 5400 4300 5400
+Wire Wire Line
+	2500 950  5000 950 
+Wire Wire Line
+	5000 950  5000 1600
+Connection ~ 2500 950 
+Connection ~ 5000 1600
 $EndSCHEMATC
