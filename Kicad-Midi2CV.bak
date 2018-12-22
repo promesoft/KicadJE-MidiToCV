@@ -30,7 +30,7 @@ U 1 1 5C1C075E
 P 2250 2500
 F 0 "U2" H 2250 2825 50  0000 C CNN
 F 1 "EL814" H 2250 2734 50  0000 C CNN
-F 2 "OptoDevice:Panasonic_APV-AQY_SSOP-4_4.45x2.65mm_P1.27mm" H 2050 2300 50  0001 L CIN
+F 2 "Package_DIP:DIP-4_W7.62mm_LongPads" H 2050 2300 50  0001 L CIN
 F 3 "http://www.everlight.com/file/ProductFile/EL814.pdf" H 2275 2500 50  0001 L CNN
 	1    2250 2500
 	1    0    0    -1  
