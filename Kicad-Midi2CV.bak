@@ -407,8 +407,6 @@ Wire Wire Line
 	5100 3800 5150 3800
 Connection ~ 5150 3800
 Wire Wire Line
-	3100 2250 3100 2300
-Wire Wire Line
 	3500 2700 3500 4800
 Wire Wire Line
 	3400 2600 3400 4500
@@ -416,11 +414,6 @@ Wire Wire Line
 	3300 2500 3300 4150
 Wire Wire Line
 	3200 2400 3200 3850
-Wire Wire Line
-	3100 2300 4600 2300
-Connection ~ 3100 2300
-Wire Wire Line
-	3100 2300 3100 2400
 Wire Wire Line
 	3200 2400 4600 2400
 Wire Wire Line
@@ -477,8 +470,6 @@ Wire Wire Line
 	5000 1800 5000 1600
 Wire Wire Line
 	5000 1600 5700 1600
-Wire Wire Line
-	7900 1600 7900 2000
 Connection ~ 7900 2000
 $Comp
 L Connector_Generic:Conn_01x04 J2
@@ -495,9 +486,6 @@ Wire Wire Line
 	5700 1600 5700 1700
 Wire Wire Line
 	5700 1700 5800 1700
-Connection ~ 5700 1600
-Wire Wire Line
-	5700 1600 7900 1600
 Wire Wire Line
 	5800 1800 5300 1800
 Wire Wire Line
@@ -530,7 +518,7 @@ Connection ~ 6450 2350
 Wire Wire Line
 	5300 1800 5300 1500
 Wire Wire Line
-	5300 1500 6350 1500
+	5300 1500 5450 1500
 Wire Wire Line
 	6350 1500 6350 1650
 Connection ~ 5300 1800
@@ -609,7 +597,7 @@ Wire Notes Line
 Wire Notes Line
 	850  3400 3600 3400
 Wire Notes Line
-	3600 3400 3600 5850
+	3600 3900 3600 6350
 Wire Notes Line
 	3600 5850 850  5850
 Wire Notes Line
@@ -623,26 +611,18 @@ Wire Wire Line
 $Comp
 L Device:Rotary_Encoder_Switch SW1
 U 1 1 5C253AC2
-P 3200 5300
-F 0 "SW1" H 3200 4933 50  0000 C CNN
-F 1 "Rotary_Encoder_Switch" H 3200 5024 50  0000 C CNN
-F 2 "" H 3050 5460 50  0001 C CNN
-F 3 "~" H 3200 5560 50  0001 C CNN
-	1    3200 5300
+P 2850 5550
+F 0 "SW1" H 2850 5183 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 2850 5274 50  0000 C CNN
+F 2 "" H 2700 5710 50  0001 C CNN
+F 3 "~" H 2850 5810 50  0001 C CNN
+	1    2850 5550
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	3500 5200 4200 5200
-Wire Wire Line
-	4200 5200 4200 3200
 Wire Wire Line
 	4200 3200 4600 3200
 Wire Wire Line
 	4600 3300 4300 3300
-Wire Wire Line
-	4300 3300 4300 5400
-Wire Wire Line
-	3500 5400 4300 5400
 Wire Wire Line
 	2500 950  3100 950 
 Wire Wire Line
@@ -654,5 +634,165 @@ Wire Wire Line
 Connection ~ 3100 1850
 Connection ~ 3100 950 
 Wire Wire Line
-	3100 950  5000 950 
+	3100 950  3300 950 
+Wire Wire Line
+	3100 2250 3100 2400
+Wire Wire Line
+	3100 2250 3700 2250
+Wire Wire Line
+	3700 2250 3700 2200
+Wire Wire Line
+	3700 2200 4600 2200
+Connection ~ 3100 2250
+$Comp
+L Device:R R?
+U 1 1 5C26F86C
+P 3900 5450
+F 0 "R?" V 3693 5450 50  0000 C CNN
+F 1 "10k" V 3784 5450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3830 5450 50  0001 C CNN
+F 3 "~" H 3900 5450 50  0001 C CNN
+	1    3900 5450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4050 5450 4200 5450
+$Comp
+L Device:R R?
+U 1 1 5C26F900
+P 3900 5650
+F 0 "R?" V 3693 5650 50  0000 C CNN
+F 1 "10k" V 3784 5650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3830 5650 50  0001 C CNN
+F 3 "~" H 3900 5650 50  0001 C CNN
+	1    3900 5650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4050 5650 4300 5650
+Wire Wire Line
+	4200 3200 4200 5450
+Wire Wire Line
+	4300 3300 4300 5650
+Wire Wire Line
+	3150 5450 3750 5450
+Wire Wire Line
+	3150 5650 3750 5650
+$Comp
+L Device:C C?
+U 1 1 5C289E13
+P 4600 5800
+F 0 "C?" H 4715 5846 50  0000 L CNN
+F 1 "10n" H 4715 5755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4638 5650 50  0001 C CNN
+F 3 "~" H 4600 5800 50  0001 C CNN
+	1    4600 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C289F13
+P 4300 5800
+F 0 "C?" H 4415 5846 50  0000 L CNN
+F 1 "10n" H 4415 5755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4338 5650 50  0001 C CNN
+F 3 "~" H 4300 5800 50  0001 C CNN
+	1    4300 5800
+	1    0    0    -1  
+$EndComp
+Connection ~ 4300 5650
+Wire Wire Line
+	4200 5450 4600 5450
+Wire Wire Line
+	4600 5450 4600 5650
+Connection ~ 4200 5450
+$Comp
+L power:GND #PWR?
+U 1 1 5C28E7DD
+P 4600 6100
+F 0 "#PWR?" H 4600 5850 50  0001 C CNN
+F 1 "GND" H 4605 5927 50  0000 C CNN
+F 2 "" H 4600 6100 50  0001 C CNN
+F 3 "" H 4600 6100 50  0001 C CNN
+	1    4600 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 5950 4600 5950
+Wire Wire Line
+	4600 5950 4600 6100
+Connection ~ 4600 5950
+$Comp
+L power:VCC #PWR?
+U 1 1 5C2979FB
+P 3100 950
+F 0 "#PWR?" H 3100 800 50  0001 C CNN
+F 1 "VCC" H 3117 1123 50  0000 C CNN
+F 2 "" H 3100 950 50  0001 C CNN
+F 3 "" H 3100 950 50  0001 C CNN
+	1    3100 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5C297A7B
+P 3300 950
+F 0 "#FLG?" H 3300 1025 50  0001 C CNN
+F 1 "PWR_FLAG" H 3300 1124 50  0000 C CNN
+F 2 "" H 3300 950 50  0001 C CNN
+F 3 "~" H 3300 950 50  0001 C CNN
+	1    3300 950 
+	1    0    0    -1  
+$EndComp
+Connection ~ 3300 950 
+Wire Wire Line
+	3300 950  5000 950 
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5C297AC9
+P 5850 1500
+F 0 "#FLG?" H 5850 1575 50  0001 C CNN
+F 1 "PWR_FLAG" H 5850 1674 50  0000 C CNN
+F 2 "" H 5850 1500 50  0001 C CNN
+F 3 "~" H 5850 1500 50  0001 C CNN
+	1    5850 1500
+	1    0    0    -1  
+$EndComp
+Connection ~ 5850 1500
+Wire Wire Line
+	5850 1500 6350 1500
+Wire Wire Line
+	6350 1500 7900 1500
+Wire Wire Line
+	7900 1500 7900 2000
+Connection ~ 6350 1500
+$Comp
+L power:+5V #PWR?
+U 1 1 5C29C771
+P 5450 1500
+F 0 "#PWR?" H 5450 1350 50  0001 C CNN
+F 1 "+5V" H 5465 1673 50  0000 C CNN
+F 2 "" H 5450 1500 50  0001 C CNN
+F 3 "" H 5450 1500 50  0001 C CNN
+	1    5450 1500
+	1    0    0    -1  
+$EndComp
+Connection ~ 5450 1500
+Wire Wire Line
+	5450 1500 5850 1500
+$Comp
+L power:+5V #PWR?
+U 1 1 5C29C833
+P 3400 5350
+F 0 "#PWR?" H 3400 5200 50  0001 C CNN
+F 1 "+5V" H 3415 5523 50  0000 C CNN
+F 2 "" H 3400 5350 50  0001 C CNN
+F 3 "" H 3400 5350 50  0001 C CNN
+	1    3400 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 5550 3400 5550
+Wire Wire Line
+	3400 5550 3400 5350
 $EndSCHEMATC
