@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 1
 Title "MIDI to CV"
 Date "2018-12-26"
-Rev "Rev A"
+Rev "Rev A2"
 Comp "Promesoft"
 Comment1 "Johansen Engineering"
 Comment2 ""
@@ -662,6 +662,7 @@ F 0 "J5" H 9367 2971 50  0000 R CNN
 F 1 "AudioJack2_Ground_Switch" H 9367 2880 50  0000 R CNN
 F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 9600 2900 50  0001 C CNN
 F 3 "~" H 9600 2900 50  0001 C CNN
+F 4 "CV1 Out" H 9600 2900 50  0001 C CNN "Function"
 	1    9600 2900
 	-1   0    0    -1  
 $EndComp
@@ -673,6 +674,7 @@ F 0 "J6" H 9367 3421 50  0000 R CNN
 F 1 "AudioJack2_Ground_Switch" H 9367 3330 50  0000 R CNN
 F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 9600 3350 50  0001 C CNN
 F 3 "~" H 9600 3350 50  0001 C CNN
+F 4 "CV2 out" H 9600 3350 50  0001 C CNN "Function"
 	1    9600 3350
 	-1   0    0    -1  
 $EndComp
@@ -1116,6 +1118,7 @@ F 0 "J3" H 9367 2321 50  0000 R CNN
 F 1 "AudioJack2_Ground_Switch" H 9367 2230 50  0000 R CNN
 F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 9600 2250 50  0001 C CNN
 F 3 "~" H 9600 2250 50  0001 C CNN
+F 4 "VC input" H 9600 2250 50  0001 C CNN "Function"
 	1    9600 2250
 	-1   0    0    -1  
 $EndComp
