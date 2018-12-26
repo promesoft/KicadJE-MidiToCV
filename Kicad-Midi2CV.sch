@@ -236,17 +236,6 @@ F 3 "" H 6950 6250 50  0001 C CNN
 	1    6950 6250
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR015
-U 1 1 5C1D9F00
-P 4600 5450
-F 0 "#PWR015" H 4600 5200 50  0001 C CNN
-F 1 "GND" H 4605 5277 50  0000 C CNN
-F 2 "" H 4600 5450 50  0001 C CNN
-F 3 "" H 4600 5450 50  0001 C CNN
-	1    4600 5450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	950  5100 750  5100
 Wire Wire Line
@@ -315,13 +304,6 @@ F 3 "~" H 6200 2800 50  0001 C CNN
 	1    6200 2800
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	4600 5450 4600 5200
-Wire Wire Line
-	4600 5200 4650 5200
-Wire Wire Line
-	4550 5200 4600 5200
-Connection ~ 4600 5200
 Wire Wire Line
 	6400 3200 6100 3200
 Wire Wire Line
@@ -459,7 +441,7 @@ U 1 1 5C253AC2
 P 2600 7150
 F 0 "SW1" H 2600 6783 50  0000 C CNN
 F 1 "Rotary_Encoder_Switch" H 2600 6874 50  0000 C CNN
-F 2 "" H 2450 7310 50  0001 C CNN
+F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm" H 2450 7310 50  0001 C CNN
 F 3 "~" H 2600 7410 50  0001 C CNN
 	1    2600 7150
 	-1   0    0    1   
@@ -1326,7 +1308,7 @@ U 1 1 5C723CF4
 P 6650 1300
 F 0 "U1" H 6650 1667 50  0000 C CNN
 F 1 "TL072" H 6650 1576 50  0000 C CNN
-F 2 "" H 6650 1300 50  0001 C CNN
+F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 6650 1300 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6650 1300 50  0001 C CNN
 	1    6650 1300
 	1    0    0    -1  
@@ -1337,7 +1319,7 @@ U 2 1 5C723E70
 P 9850 1300
 F 0 "U1" H 9850 1667 50  0000 C CNN
 F 1 "TL072" H 9850 1576 50  0000 C CNN
-F 2 "" H 9850 1300 50  0001 C CNN
+F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 9850 1300 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 9850 1300 50  0001 C CNN
 	2    9850 1300
 	1    0    0    -1  
@@ -1456,7 +1438,7 @@ U 1 1 5C7A3722
 P 7100 1000
 F 0 "RV1" H 7030 1046 50  0000 R CNN
 F 1 "10k" H 7030 955 50  0000 R CNN
-F 2 "" H 7100 1000 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK097_Single_Horizontal" H 7100 1000 50  0001 C CNN
 F 3 "~" H 7100 1000 50  0001 C CNN
 	1    7100 1000
 	1    0    0    -1  
@@ -1467,7 +1449,7 @@ U 1 1 5C7A37D8
 P 10300 1000
 F 0 "RV2" H 10230 1046 50  0000 R CNN
 F 1 "10k" H 10230 955 50  0000 R CNN
-F 2 "" H 10300 1000 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK097_Single_Horizontal" H 10300 1000 50  0001 C CNN
 F 3 "~" H 10300 1000 50  0001 C CNN
 	1    10300 1000
 	1    0    0    -1  
@@ -1619,4 +1601,22 @@ Wire Wire Line
 Connection ~ 2850 3600
 Wire Wire Line
 	2850 3600 2850 3650
+Wire Wire Line
+	4550 5200 4600 5200
+$Comp
+L power:GND #PWR0101
+U 1 1 5C912A2F
+P 4600 5300
+F 0 "#PWR0101" H 4600 5050 50  0001 C CNN
+F 1 "GND" H 4605 5127 50  0000 C CNN
+F 2 "" H 4600 5300 50  0001 C CNN
+F 3 "" H 4600 5300 50  0001 C CNN
+	1    4600 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 5300 4600 5200
+Connection ~ 4600 5200
+Wire Wire Line
+	4600 5200 4650 5200
 $EndSCHEMATC
