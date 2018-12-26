@@ -864,4 +864,26 @@ Wire Wire Line
 Connection ~ 5150 2850
 Wire Wire Line
 	5150 2850 5550 2850
+$Comp
+L Connector:AudioJack2_Ground_Switch J?
+U 1 1 5C2C7CBB
+P 10200 2900
+F 0 "J?" H 9967 2971 50  0000 R CNN
+F 1 "AudioJack2_Ground_Switch" H 9967 2880 50  0000 R CNN
+F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 10200 2900 50  0001 C CNN
+F 3 "~" H 10200 2900 50  0001 C CNN
+	1    10200 2900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2_Ground_Switch J?
+U 1 1 5C2C7E1B
+P 10200 3350
+F 0 "J?" H 9967 3421 50  0000 R CNN
+F 1 "AudioJack2_Ground_Switch" H 9967 3330 50  0000 R CNN
+F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 10200 3350 50  0001 C CNN
+F 3 "~" H 10200 3350 50  0001 C CNN
+	1    10200 3350
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
