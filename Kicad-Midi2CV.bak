@@ -597,7 +597,7 @@ Wire Notes Line
 Wire Notes Line
 	850  3400 3600 3400
 Wire Notes Line
-	3600 3900 3600 6350
+	3600 3400 3600 5850
 Wire Notes Line
 	3600 5850 850  5850
 Wire Notes Line
