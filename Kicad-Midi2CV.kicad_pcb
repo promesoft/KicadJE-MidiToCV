@@ -2374,7 +2374,7 @@
   )
 
   (module Potentiometer_THT:Potentiometer_Alps_RK097_Single_Horizontal (layer F.Cu) (tedit 5A3D4993) (tstamp 5C3DAC28)
-    (at 30.48 63.5 180)
+    (at 30.48 64.135 180)
     (descr "Potentiometer, horizontal, Alps RK097 Single, http://www.alps.com/prod/info/E/HTML/Potentiometer/RotaryPotentiometers/RK097/RK097_list.html")
     (tags "Potentiometer horizontal Alps RK097 Single")
     (path /5C7A37D8)
@@ -2768,7 +2768,7 @@
   )
 
   (module Connector_Audio:AudioJack3StereoNarrow-PJ-321 (layer F.Cu) (tedit 5C14461A) (tstamp 5C25FD3C)
-    (at 30.48 74.93)
+    (at 30.48 75.565)
     (path /5C2C7E1B)
     (fp_text reference J6 (at 6.35 0 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -2815,7 +2815,7 @@
   )
 
   (module Connector_Audio:AudioJack3StereoNarrow-PJ-321 (layer F.Cu) (tedit 5C14461A) (tstamp 5C25FD53)
-    (at 30.48 92.71)
+    (at 30.48 93.345)
     (path /5C5280BE)
     (fp_text reference J8 (at 6.35 0 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -2862,7 +2862,7 @@
   )
 
   (module Connector_Audio:AudioJack3StereoNarrow-PJ-321 (layer F.Cu) (tedit 5C14461A) (tstamp 5C25FD6A)
-    (at 30.48 110.49)
+    (at 30.48 111.125)
     (path /5C528138)
     (fp_text reference J9 (at 6.35 0 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -2956,7 +2956,7 @@
   )
 
   (module Connector_Audio:AudioJack3StereoNarrow-PJ-321 (layer F.Cu) (tedit 5C14461A) (tstamp 5C25FD98)
-    (at 30.48 83.82)
+    (at 30.48 84.455)
     (path /5C52825C)
     (fp_text reference J11 (at 6.35 0 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -3003,7 +3003,7 @@
   )
 
   (module Connector_Audio:AudioJack3StereoNarrow-PJ-321 (layer F.Cu) (tedit 5C14461A) (tstamp 5C25FDAF)
-    (at 30.48 101.6)
+    (at 30.48 102.235)
     (path /5C528262)
     (fp_text reference J12 (at 6.35 0 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -3050,7 +3050,7 @@
   )
 
   (module Connector_Audio:AudioJack3StereoNarrow-PJ-321 (layer F.Cu) (tedit 5C14461A) (tstamp 5C25FDC6)
-    (at 30.48 119.38)
+    (at 30.48 120.015)
     (path /5C528268)
     (fp_text reference J13 (at 6.35 0 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
