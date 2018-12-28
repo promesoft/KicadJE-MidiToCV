@@ -634,7 +634,7 @@ U 1 1 5C2C7CBB
 P 9600 2900
 F 0 "J5" H 9367 2971 50  0000 R CNN
 F 1 "AudioJack2_Ground_Switch" H 9367 2880 50  0000 R CNN
-F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 9600 2900 50  0001 C CNN
+F 2 "Connector_Audio:AudioJack3StereoNarrow-PJ-321" H 9600 2900 50  0001 C CNN
 F 3 "~" H 9600 2900 50  0001 C CNN
 F 4 "CV1 Out" H 9600 2900 50  0001 C CNN "Function"
 	1    9600 2900
@@ -646,7 +646,7 @@ U 1 1 5C2C7E1B
 P 9600 3350
 F 0 "J6" H 9367 3421 50  0000 R CNN
 F 1 "AudioJack2_Ground_Switch" H 9367 3330 50  0000 R CNN
-F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 9600 3350 50  0001 C CNN
+F 2 "Connector_Audio:AudioJack3StereoNarrow-PJ-321" H 9600 3350 50  0001 C CNN
 F 3 "~" H 9600 3350 50  0001 C CNN
 F 4 "CV2 out" H 9600 3350 50  0001 C CNN "Function"
 	1    9600 3350
@@ -996,7 +996,7 @@ U 1 1 5C5280BE
 P 9600 3800
 F 0 "J8" H 9367 3871 50  0000 R CNN
 F 1 "AudioJack2_Ground_Switch" H 9367 3780 50  0000 R CNN
-F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 9600 3800 50  0001 C CNN
+F 2 "Connector_Audio:AudioJack3StereoNarrow-PJ-321" H 9600 3800 50  0001 C CNN
 F 3 "~" H 9600 3800 50  0001 C CNN
 	1    9600 3800
 	-1   0    0    -1  
@@ -1007,7 +1007,7 @@ U 1 1 5C528138
 P 9600 4200
 F 0 "J9" H 9367 4271 50  0000 R CNN
 F 1 "AudioJack2_Ground_Switch" H 9367 4180 50  0000 R CNN
-F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 9600 4200 50  0001 C CNN
+F 2 "Connector_Audio:AudioJack3StereoNarrow-PJ-321" H 9600 4200 50  0001 C CNN
 F 3 "~" H 9600 4200 50  0001 C CNN
 	1    9600 4200
 	-1   0    0    -1  
@@ -1018,7 +1018,7 @@ U 1 1 5C528256
 P 9600 4650
 F 0 "J10" H 9367 4721 50  0000 R CNN
 F 1 "AudioJack2_Ground_Switch" H 9367 4630 50  0000 R CNN
-F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 9600 4650 50  0001 C CNN
+F 2 "Connector_Audio:AudioJack3StereoNarrow-PJ-321" H 9600 4650 50  0001 C CNN
 F 3 "~" H 9600 4650 50  0001 C CNN
 	1    9600 4650
 	-1   0    0    -1  
@@ -1029,7 +1029,7 @@ U 1 1 5C52825C
 P 9600 5100
 F 0 "J11" H 9367 5171 50  0000 R CNN
 F 1 "AudioJack2_Ground_Switch" H 9367 5080 50  0000 R CNN
-F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 9600 5100 50  0001 C CNN
+F 2 "Connector_Audio:AudioJack3StereoNarrow-PJ-321" H 9600 5100 50  0001 C CNN
 F 3 "~" H 9600 5100 50  0001 C CNN
 	1    9600 5100
 	-1   0    0    -1  
@@ -1040,7 +1040,7 @@ U 1 1 5C528262
 P 9600 5550
 F 0 "J12" H 9367 5621 50  0000 R CNN
 F 1 "AudioJack2_Ground_Switch" H 9367 5530 50  0000 R CNN
-F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 9600 5550 50  0001 C CNN
+F 2 "Connector_Audio:AudioJack3StereoNarrow-PJ-321" H 9600 5550 50  0001 C CNN
 F 3 "~" H 9600 5550 50  0001 C CNN
 	1    9600 5550
 	-1   0    0    -1  
@@ -1051,7 +1051,7 @@ U 1 1 5C528268
 P 9600 5950
 F 0 "J13" H 9367 6021 50  0000 R CNN
 F 1 "AudioJack2_Ground_Switch" H 9367 5930 50  0000 R CNN
-F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 9600 5950 50  0001 C CNN
+F 2 "Connector_Audio:AudioJack3StereoNarrow-PJ-321" H 9600 5950 50  0001 C CNN
 F 3 "~" H 9600 5950 50  0001 C CNN
 	1    9600 5950
 	-1   0    0    -1  
@@ -1078,7 +1078,7 @@ U 1 1 5C59B839
 P 9600 2250
 F 0 "J3" H 9367 2321 50  0000 R CNN
 F 1 "AudioJack2_Ground_Switch" H 9367 2230 50  0000 R CNN
-F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 9600 2250 50  0001 C CNN
+F 2 "Connector_Audio:AudioJack3StereoNarrow-PJ-321" H 9600 2250 50  0001 C CNN
 F 3 "~" H 9600 2250 50  0001 C CNN
 F 4 "VC input" H 9600 2250 50  0001 C CNN "Function"
 	1    9600 2250
