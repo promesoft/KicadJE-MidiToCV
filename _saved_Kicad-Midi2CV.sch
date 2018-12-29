@@ -1910,15 +1910,7 @@ Wire Wire Line
 	5050 4700 5650 4700
 Wire Wire Line
 	6000 7350 5650 7350
-Wire Wire Line
-	5650 7350 5650 5650
 Connection ~ 6000 7350
-Connection ~ 5650 5650
-Wire Wire Line
-	5750 5750 5600 5750
-Wire Wire Line
-	5600 5750 5600 7450
-Connection ~ 5750 5750
 Wire Wire Line
 	5600 7450 6000 7450
 Wire Wire Line
@@ -2015,4 +2007,14 @@ Text Label 4650 1000 0    50   ~ 0
 12v
 Text Label 4650 1600 0    50   ~ 0
 -12v
+Wire Wire Line
+	5600 5650 5650 5650
+Wire Wire Line
+	5600 5650 5600 7450
+Connection ~ 5650 5650
+Wire Wire Line
+	5750 5750 5650 5750
+Wire Wire Line
+	5650 5750 5650 7350
+Connection ~ 5750 5750
 $EndSCHEMATC
