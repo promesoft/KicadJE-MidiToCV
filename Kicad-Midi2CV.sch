@@ -2134,15 +2134,28 @@ Wire Wire Line
 Connection ~ 9400 750 
 Text Label 5650 700  0    50   ~ 0
 Gate
-Text GLabel 5850 800  2    50   Input ~ 0
-CV-Bus
 Wire Notes Line
 	6250 500  6250 1800
 Wire Notes Line
 	600  500  6250 500 
 Wire Notes Line
 	3400 1800 6250 1800
+Text GLabel 6100 800  2    50   Input ~ 0
+A7
+$Comp
+L Device:R R29
+U 1 1 5D1E905C
+P 5950 800
+F 0 "R29" V 5743 800 50  0000 C CNN
+F 1 "1k" V 5834 800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5880 800 50  0001 C CNN
+F 3 "~" H 5950 800 50  0001 C CNN
+	1    5950 800 
+	0    1    1    0   
+$EndComp
+Text Label 5650 800  0    50   ~ 0
+CV
 Wire Wire Line
-	5700 800  5850 800 
+	5800 800  5700 800 
 Connection ~ 5700 800 
 $EndSCHEMATC
