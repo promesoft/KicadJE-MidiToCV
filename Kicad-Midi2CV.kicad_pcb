@@ -2399,6 +2399,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model C:/Users/anders/Documents/KiCad/Lib/aj_packages3d/3d_smd_dil/walter/smd_dil/so-8.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 -90))
+    )
   )
 
   (module Package_DIP:DIP-4_W7.62mm_LongPads (layer F.Cu) (tedit 5A02E8C5) (tstamp 5C3DAC83)

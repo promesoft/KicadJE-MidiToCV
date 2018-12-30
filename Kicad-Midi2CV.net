@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\anders\Documents\KiCad\Projects\Kicad-MidiToCV\Kicad-Midi2CV.sch)
-    (date "30/12/2018 16:32:46")
+    (date "30/12/2018 16:39:43")
     (tool "Eeschema (5.0.0)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -362,7 +362,7 @@
       (tstamp 5C717C4A))
     (comp (ref U1)
       (value TL072)
-      (footprint Package_SO:SO-8_5.3x6.2mm_P1.27mm)
+      (footprint AJ-Dropbox-Kicad:AJ_SO-8_5.3x6.2mm_P1.27mm)
       (datasheet http://www.ti.com/lit/ds/symlink/tl071.pdf)
       (libsource (lib Amplifier_Operational) (part TL072) (description "Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8"))
       (sheetpath (names /) (tstamps /))
