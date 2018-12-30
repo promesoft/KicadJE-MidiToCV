@@ -584,25 +584,25 @@ Connection ~ 4850 2850
 $Comp
 L Connector:AudioJack2 J6
 U 1 1 5C2C7CBB
-P 9600 2900
-F 0 "J6" H 9367 2971 50  0000 R CNN
-F 1 "CV1" H 9367 2880 50  0000 R CNN
-F 2 "Connector_Audio:AudioJack3StereoNarrow-PJ-321" H 9600 2900 50  0001 C CNN
-F 3 "~" H 9600 2900 50  0001 C CNN
-F 4 "CV1 Out" H 9600 2900 50  0001 C CNN "Function"
-	1    9600 2900
+P 10550 3350
+F 0 "J6" H 10317 3421 50  0000 R CNN
+F 1 "CV1" H 10317 3330 50  0000 R CNN
+F 2 "Connector_Audio:AudioJack3StereoNarrow-PJ-321" H 10550 3350 50  0001 C CNN
+F 3 "~" H 10550 3350 50  0001 C CNN
+F 4 "CV1 Out" H 10550 3350 50  0001 C CNN "Function"
+	1    10550 3350
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector:AudioJack2 J7
 U 1 1 5C2C7E1B
-P 9600 3350
-F 0 "J7" H 9367 3421 50  0000 R CNN
-F 1 "CV2" H 9367 3330 50  0000 R CNN
-F 2 "Connector_Audio:AudioJack3StereoNarrow-PJ-321" H 9600 3350 50  0001 C CNN
-F 3 "~" H 9600 3350 50  0001 C CNN
-F 4 "CV2 out" H 9600 3350 50  0001 C CNN "Function"
-	1    9600 3350
+P 10550 3650
+F 0 "J7" H 10317 3721 50  0000 R CNN
+F 1 "CV2" H 10317 3630 50  0000 R CNN
+F 2 "Connector_Audio:AudioJack3StereoNarrow-PJ-321" H 10550 3650 50  0001 C CNN
+F 3 "~" H 10550 3650 50  0001 C CNN
+F 4 "CV2 out" H 10550 3650 50  0001 C CNN "Function"
+	1    10550 3650
 	-1   0    0    -1  
 $EndComp
 Text GLabel 3950 4200 0    50   Input ~ 0
@@ -717,17 +717,17 @@ Wire Wire Line
 	7550 5850 7900 5850
 Wire Wire Line
 	7550 5950 7900 5950
-Text GLabel 9100 4650 0    50   Input ~ 0
+Text GLabel 10050 4750 0    50   Input ~ 0
 Gate1
-Text GLabel 9100 5100 0    50   Input ~ 0
+Text GLabel 10050 5200 0    50   Input ~ 0
 Gate2
-Text GLabel 6700 1200 0    50   Input ~ 0
+Text GLabel 6950 1400 0    50   Input ~ 0
 CV1
-Text GLabel 8800 1200 0    50   Input ~ 0
+Text GLabel 9100 1400 0    50   Input ~ 0
 CV2
-Text GLabel 9050 3800 0    50   Input ~ 0
+Text GLabel 10000 3950 0    50   Input ~ 0
 CV3
-Text GLabel 9050 4200 0    50   Input ~ 0
+Text GLabel 10000 4300 0    50   Input ~ 0
 CV4
 Wire Wire Line
 	2850 3150 2850 3250
@@ -855,11 +855,11 @@ Text GLabel 5350 4500 2    50   Input ~ 0
 A3
 Wire Wire Line
 	5350 4500 5050 4500
-Text GLabel 8550 2250 0    50   Input ~ 0
-A3
-Text GLabel 9100 5550 0    50   Input ~ 0
+Text GLabel 9500 2400 0    50   Input ~ 0
+A6
+Text GLabel 10050 5650 0    50   Input ~ 0
 Gate3
-Text GLabel 9100 5950 0    50   Input ~ 0
+Text GLabel 10050 6050 0    50   Input ~ 0
 Gate4
 Wire Wire Line
 	5150 2950 5550 2950
@@ -878,134 +878,121 @@ Wire Notes Line
 $Comp
 L Connector:AudioJack2 J9
 U 1 1 5C5280BE
-P 9600 3800
-F 0 "J9" H 9367 3871 50  0000 R CNN
-F 1 "CV3" H 9367 3780 50  0000 R CNN
-F 2 "Connector_Audio:AudioJack3StereoNarrow-PJ-321" H 9600 3800 50  0001 C CNN
-F 3 "~" H 9600 3800 50  0001 C CNN
-	1    9600 3800
+P 10550 3950
+F 0 "J9" H 10317 4021 50  0000 R CNN
+F 1 "CV3" H 10317 3930 50  0000 R CNN
+F 2 "Connector_Audio:AudioJack3StereoNarrow-PJ-321" H 10550 3950 50  0001 C CNN
+F 3 "~" H 10550 3950 50  0001 C CNN
+	1    10550 3950
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector:AudioJack2 J10
 U 1 1 5C528138
-P 9600 4200
-F 0 "J10" H 9367 4271 50  0000 R CNN
-F 1 "CV4" H 9367 4180 50  0000 R CNN
-F 2 "Connector_Audio:AudioJack3StereoNarrow-PJ-321" H 9600 4200 50  0001 C CNN
-F 3 "~" H 9600 4200 50  0001 C CNN
-	1    9600 4200
+P 10550 4300
+F 0 "J10" H 10317 4371 50  0000 R CNN
+F 1 "CV4" H 10317 4280 50  0000 R CNN
+F 2 "Connector_Audio:AudioJack3StereoNarrow-PJ-321" H 10550 4300 50  0001 C CNN
+F 3 "~" H 10550 4300 50  0001 C CNN
+	1    10550 4300
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector:AudioJack2 J11
 U 1 1 5C528256
-P 9600 4650
-F 0 "J11" H 9367 4721 50  0000 R CNN
-F 1 "Gate1" H 9367 4630 50  0000 R CNN
-F 2 "Connector_Audio:AudioJack3StereoNarrow-PJ-321" H 9600 4650 50  0001 C CNN
-F 3 "~" H 9600 4650 50  0001 C CNN
-	1    9600 4650
+P 10550 4750
+F 0 "J11" H 10317 4821 50  0000 R CNN
+F 1 "Gate1" H 10317 4730 50  0000 R CNN
+F 2 "Connector_Audio:AudioJack3StereoNarrow-PJ-321" H 10550 4750 50  0001 C CNN
+F 3 "~" H 10550 4750 50  0001 C CNN
+	1    10550 4750
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector:AudioJack2 J13
 U 1 1 5C52825C
-P 9600 5100
-F 0 "J13" H 9367 5171 50  0000 R CNN
-F 1 "Gate2" H 9367 5080 50  0000 R CNN
-F 2 "Connector_Audio:AudioJack3StereoNarrow-PJ-321" H 9600 5100 50  0001 C CNN
-F 3 "~" H 9600 5100 50  0001 C CNN
-	1    9600 5100
+P 10550 5200
+F 0 "J13" H 10317 5271 50  0000 R CNN
+F 1 "Gate2" H 10317 5180 50  0000 R CNN
+F 2 "Connector_Audio:AudioJack3StereoNarrow-PJ-321" H 10550 5200 50  0001 C CNN
+F 3 "~" H 10550 5200 50  0001 C CNN
+	1    10550 5200
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector:AudioJack2 J14
 U 1 1 5C528262
-P 9600 5550
-F 0 "J14" H 9367 5621 50  0000 R CNN
-F 1 "Gate3" H 9367 5530 50  0000 R CNN
-F 2 "Connector_Audio:AudioJack3StereoNarrow-PJ-321" H 9600 5550 50  0001 C CNN
-F 3 "~" H 9600 5550 50  0001 C CNN
-	1    9600 5550
+P 10550 5650
+F 0 "J14" H 10317 5721 50  0000 R CNN
+F 1 "Gate3" H 10317 5630 50  0000 R CNN
+F 2 "Connector_Audio:AudioJack3StereoNarrow-PJ-321" H 10550 5650 50  0001 C CNN
+F 3 "~" H 10550 5650 50  0001 C CNN
+	1    10550 5650
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector:AudioJack2 J15
 U 1 1 5C528268
-P 9600 5950
-F 0 "J15" H 9367 6021 50  0000 R CNN
-F 1 "Gate4" H 9367 5930 50  0000 R CNN
-F 2 "Connector_Audio:AudioJack3StereoNarrow-PJ-321" H 9600 5950 50  0001 C CNN
-F 3 "~" H 9600 5950 50  0001 C CNN
-	1    9600 5950
+P 10550 6050
+F 0 "J15" H 10317 6121 50  0000 R CNN
+F 1 "Gate4" H 10317 6030 50  0000 R CNN
+F 2 "Connector_Audio:AudioJack3StereoNarrow-PJ-321" H 10550 6050 50  0001 C CNN
+F 3 "~" H 10550 6050 50  0001 C CNN
+	1    10550 6050
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	9050 2900 9400 2900
+	10050 6050 10350 6050
 Wire Wire Line
-	9100 5950 9400 5950
+	10050 5650 10350 5650
 Wire Wire Line
-	9100 5550 9400 5550
+	10050 5200 10350 5200
 Wire Wire Line
-	9100 5100 9400 5100
+	10050 4750 10350 4750
 Wire Wire Line
-	9100 4650 9400 4650
+	10000 4300 10350 4300
 Wire Wire Line
-	9050 4200 9400 4200
-Wire Wire Line
-	9050 3800 9400 3800
-Wire Wire Line
-	9050 3350 9400 3350
+	10000 3650 10350 3650
 $Comp
 L Connector:AudioJack2 J4
 U 1 1 5C59B839
-P 9600 2250
-F 0 "J4" H 9367 2321 50  0000 R CNN
-F 1 "CV in" H 9367 2230 50  0000 R CNN
-F 2 "Connector_Audio:AudioJack3StereoNarrow-PJ-321" H 9600 2250 50  0001 C CNN
-F 3 "~" H 9600 2250 50  0001 C CNN
-F 4 "VC input" H 9600 2250 50  0001 C CNN "Function"
-	1    9600 2250
+P 10550 2400
+F 0 "J4" H 10317 2471 50  0000 R CNN
+F 1 "CV6 in" H 10317 2380 50  0000 R CNN
+F 2 "Connector_Audio:AudioJack3StereoNarrow-PJ-321" H 10550 2400 50  0001 C CNN
+F 3 "~" H 10550 2400 50  0001 C CNN
+F 4 "VC input" H 10550 2400 50  0001 C CNN "Function"
+	1    10550 2400
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	9400 2150 9250 2150
+	10350 2300 10200 2300
 Wire Wire Line
-	9250 2800 9400 2800
+	10350 4200 10200 4200
 Wire Wire Line
-	9400 3250 9250 3250
-Connection ~ 9250 2800
+	10350 4650 10200 4650
+Connection ~ 10200 4200
 Wire Wire Line
-	9400 3700 9250 3700
-Connection ~ 9250 3250
+	10350 5100 10200 5100
+Connection ~ 10200 4650
 Wire Wire Line
-	9400 4100 9250 4100
-Connection ~ 9250 3700
+	10350 5550 10200 5550
+Connection ~ 10200 5100
 Wire Wire Line
-	9400 4550 9250 4550
-Connection ~ 9250 4100
+	10350 5950 10200 5950
+Connection ~ 10200 5550
 Wire Wire Line
-	9400 5000 9250 5000
-Connection ~ 9250 4550
-Wire Wire Line
-	9400 5450 9250 5450
-Connection ~ 9250 5000
-Wire Wire Line
-	9400 5850 9250 5850
-Connection ~ 9250 5450
-Wire Wire Line
-	9250 6050 9250 5850
-Connection ~ 9250 5850
+	10200 6150 10200 5950
+Connection ~ 10200 5950
 $Comp
 L power:GND #PWR017
 U 1 1 5C641C43
-P 9250 6050
-F 0 "#PWR017" H 9250 5800 50  0001 C CNN
-F 1 "GND" H 9255 5877 50  0000 C CNN
-F 2 "" H 9250 6050 50  0001 C CNN
-F 3 "" H 9250 6050 50  0001 C CNN
-	1    9250 6050
+P 10200 6150
+F 0 "#PWR017" H 10200 5900 50  0001 C CNN
+F 1 "GND" H 10205 5977 50  0000 C CNN
+F 2 "" H 10200 6150 50  0001 C CNN
+F 3 "" H 10200 6150 50  0001 C CNN
+	1    10200 6150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1120,94 +1107,67 @@ U 1 1 5C723CF4
 P 7600 1300
 F 0 "U1" H 7600 1667 50  0000 C CNN
 F 1 "TL072" H 7600 1576 50  0000 C CNN
-F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 7600 1300 50  0001 C CNN
+F 2 "AJ-Dropbox-Kicad:AJ_SO-8_5.3x6.2mm_P1.27mm" H 7600 1300 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 7600 1300 50  0001 C CNN
 	1    7600 1300
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Amplifier_Operational:TL072 U1
 U 2 1 5C723E70
-P 9850 1300
-F 0 "U1" H 9850 1667 50  0000 C CNN
-F 1 "TL072" H 9850 1576 50  0000 C CNN
-F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 9850 1300 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 9850 1300 50  0001 C CNN
-	2    9850 1300
-	1    0    0    -1  
+P 9750 1300
+F 0 "U1" H 9750 1667 50  0000 C CNN
+F 1 "TL072" H 9750 1576 50  0000 C CNN
+F 2 "AJ-Dropbox-Kicad:AJ_SO-8_5.3x6.2mm_P1.27mm" H 9750 1300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 9750 1300 50  0001 C CNN
+	2    9750 1300
+	1    0    0    1   
 $EndComp
-Text GLabel 10500 1300 2    50   Input ~ 0
+Text GLabel 10400 1300 2    50   Input ~ 0
 CV2Gain
-Text GLabel 9050 3350 0    50   Input ~ 0
+Text GLabel 10000 3650 0    50   Input ~ 0
 CV2Gain
-Text GLabel 9050 2900 0    50   Input ~ 0
+Text GLabel 10000 3350 0    50   Input ~ 0
 CV1Gain
 Text GLabel 8250 1300 2    50   Input ~ 0
 CV1Gain
 $Comp
 L Device:R R5
 U 1 1 5C724D75
-P 9300 1200
-F 0 "R5" V 9093 1200 50  0000 C CNN
-F 1 "10k" V 9184 1200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9230 1200 50  0001 C CNN
-F 3 "~" H 9300 1200 50  0001 C CNN
-	1    9300 1200
+P 9150 750
+F 0 "R5" V 8943 750 50  0000 C CNN
+F 1 "10k" V 9034 750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9080 750 50  0001 C CNN
+F 3 "~" H 9150 750 50  0001 C CNN
+	1    9150 750 
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R4
 U 1 1 5C72506D
-P 7050 1200
-F 0 "R4" V 6843 1200 50  0000 C CNN
-F 1 "10k" V 6934 1200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6980 1200 50  0001 C CNN
-F 3 "~" H 7050 1200 50  0001 C CNN
-	1    7050 1200
+P 7000 750
+F 0 "R4" V 6793 750 50  0000 C CNN
+F 1 "10k" V 6884 750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6930 750 50  0001 C CNN
+F 3 "~" H 7000 750 50  0001 C CNN
+	1    7000 750 
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6700 1200 6900 1200
-Wire Wire Line
-	7200 1200 7250 1200
-Wire Wire Line
-	8800 1200 9150 1200
-Wire Wire Line
-	9450 1200 9500 1200
-Wire Wire Line
 	7900 1300 8050 1300
-Wire Wire Line
-	10150 1300 10300 1300
 $Comp
 L power:GND #PWR06
 U 1 1 5C77390F
-P 7200 1500
-F 0 "#PWR06" H 7200 1250 50  0001 C CNN
-F 1 "GND" H 7205 1327 50  0000 C CNN
-F 2 "" H 7200 1500 50  0001 C CNN
-F 3 "" H 7200 1500 50  0001 C CNN
-	1    7200 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR05
-U 1 1 5C773988
-P 9450 1450
-F 0 "#PWR05" H 9450 1200 50  0001 C CNN
-F 1 "GND" H 9455 1277 50  0000 C CNN
-F 2 "" H 9450 1450 50  0001 C CNN
-F 3 "" H 9450 1450 50  0001 C CNN
-	1    9450 1450
+P 6750 850
+F 0 "#PWR06" H 6750 600 50  0001 C CNN
+F 1 "GND" H 6755 677 50  0000 C CNN
+F 2 "" H 6750 850 50  0001 C CNN
+F 3 "" H 6750 850 50  0001 C CNN
+	1    6750 850 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9450 1450 9450 1400
-Wire Wire Line
-	9450 1400 9550 1400
-Wire Wire Line
-	7300 1400 7200 1400
-Wire Wire Line
-	7200 1400 7200 1500
+	6750 750  6750 850 
 $Comp
 L Device:R R1
 U 1 1 5C78B0A1
@@ -1222,26 +1182,18 @@ $EndComp
 $Comp
 L Device:R R2
 U 1 1 5C78B13F
-P 9700 750
-F 0 "R2" V 9493 750 50  0000 C CNN
-F 1 "10k" V 9584 750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9630 750 50  0001 C CNN
-F 3 "~" H 9700 750 50  0001 C CNN
-	1    9700 750 
+P 9600 750
+F 0 "R2" V 9393 750 50  0000 C CNN
+F 1 "10k" V 9484 750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9530 750 50  0001 C CNN
+F 3 "~" H 9600 750 50  0001 C CNN
+	1    9600 750 
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	9550 750  9500 750 
-Wire Wire Line
-	9500 750  9500 1200
-Connection ~ 9500 1200
-Wire Wire Line
-	9500 1200 9550 1200
 Wire Wire Line
 	7300 750  7250 750 
 Wire Wire Line
 	7250 750  7250 1200
-Connection ~ 7250 1200
 Wire Wire Line
 	7250 1200 7300 1200
 $Comp
@@ -1258,23 +1210,16 @@ $EndComp
 $Comp
 L Device:R_POT RV2
 U 1 1 5C7A37D8
-P 10300 1000
-F 0 "RV2" H 10230 1046 50  0000 R CNN
-F 1 "10k" H 10230 955 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Alps_RK097_Single_Horizontal" H 10300 1000 50  0001 C CNN
-F 3 "~" H 10300 1000 50  0001 C CNN
-	1    10300 1000
+P 10200 1000
+F 0 "RV2" H 10130 1046 50  0000 R CNN
+F 1 "10k" H 10130 955 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK097_Single_Horizontal" H 10200 1000 50  0001 C CNN
+F 3 "~" H 10200 1000 50  0001 C CNN
+	1    10200 1000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10300 850  10300 750 
-Wire Wire Line
-	10300 750  9850 750 
-Wire Wire Line
-	10300 1150 10300 1200
-Connection ~ 10300 1300
-Wire Wire Line
-	10300 1300 10500 1300
+	10200 1150 10200 1200
 Wire Wire Line
 	7600 750  8050 750 
 Wire Wire Line
@@ -1291,13 +1236,6 @@ Wire Wire Line
 Connection ~ 8050 1200
 Wire Wire Line
 	8050 1200 8050 1300
-Wire Wire Line
-	10450 1000 10450 1200
-Wire Wire Line
-	10450 1200 10300 1200
-Connection ~ 10300 1200
-Wire Wire Line
-	10300 1200 10300 1300
 $Comp
 L MMBT2222A:MMBT2222A Q1
 U 1 1 5C800CB0
@@ -1434,38 +1372,27 @@ Wire Wire Line
 $Comp
 L Device:R R8
 U 1 1 5C272108
-P 9000 2250
-F 0 "R8" V 8793 2250 50  0000 C CNN
-F 1 "10k" V 8884 2250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8930 2250 50  0001 C CNN
-F 3 "~" H 9000 2250 50  0001 C CNN
-	1    9000 2250
+P 9950 2400
+F 0 "R8" V 9743 2400 50  0000 C CNN
+F 1 "10k" V 9834 2400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9880 2400 50  0001 C CNN
+F 3 "~" H 9950 2400 50  0001 C CNN
+	1    9950 2400
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R10
 U 1 1 5C27224E
-P 8800 2450
-F 0 "R10" H 8700 2550 50  0000 R CNN
-F 1 "10k" H 8700 2450 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8730 2450 50  0001 C CNN
-F 3 "~" H 8800 2450 50  0001 C CNN
-	1    8800 2450
-	-1   0    0    1   
+P 9950 2550
+F 0 "R10" H 9850 2650 50  0000 R CNN
+F 1 "10k" H 9850 2550 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9880 2550 50  0001 C CNN
+F 3 "~" H 9950 2550 50  0001 C CNN
+	1    9950 2550
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	8550 2250 8800 2250
-Wire Wire Line
-	9150 2250 9400 2250
-Wire Wire Line
-	8800 2300 8800 2250
-Connection ~ 8800 2250
-Wire Wire Line
-	8800 2250 8850 2250
-Wire Wire Line
-	8800 2600 8800 2800
-Wire Wire Line
-	8800 2800 9250 2800
+	10100 2400 10350 2400
 $Comp
 L Module:KY40_Rotary_Encoder_Module SW1
 U 1 1 5C2F84DB
@@ -1552,21 +1479,13 @@ Connection ~ 2750 1200
 Wire Wire Line
 	2750 1200 3050 1200
 Wire Wire Line
-	9250 2800 9250 3250
+	10200 4200 10200 4650
 Wire Wire Line
-	9250 2150 9250 2800
+	10200 4650 10200 5100
 Wire Wire Line
-	9250 3250 9250 3700
+	10200 5100 10200 5550
 Wire Wire Line
-	9250 3700 9250 4100
-Wire Wire Line
-	9250 4100 9250 4550
-Wire Wire Line
-	9250 4550 9250 5000
-Wire Wire Line
-	9250 5000 9250 5450
-Wire Wire Line
-	9250 5450 9250 5850
+	10200 5550 10200 5950
 $Comp
 L Amplifier_Operational:TL072 U1
 U 3 1 5C3F991F
@@ -2021,4 +1940,202 @@ Wire Wire Line
 	7600 5750 7900 5750
 Wire Wire Line
 	7700 4400 7700 5650
+Text GLabel 9500 1950 0    50   Input ~ 0
+A7
+$Comp
+L Connector:AudioJack2 J19
+U 1 1 5CB9F10E
+P 10550 1950
+F 0 "J19" H 10317 2021 50  0000 R CNN
+F 1 "CV7 in" H 10317 1930 50  0000 R CNN
+F 2 "Connector_Audio:AudioJack3StereoNarrow-PJ-321" H 10550 1950 50  0001 C CNN
+F 3 "~" H 10550 1950 50  0001 C CNN
+F 4 "VC input" H 10550 1950 50  0001 C CNN "Function"
+	1    10550 1950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 1850 10200 1850
+$Comp
+L Device:R R25
+U 1 1 5CB9F115
+P 9950 1950
+F 0 "R25" V 9743 1950 50  0000 C CNN
+F 1 "10k" V 9834 1950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9880 1950 50  0001 C CNN
+F 3 "~" H 9950 1950 50  0001 C CNN
+	1    9950 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R26
+U 1 1 5CB9F11B
+P 9950 2100
+F 0 "R26" H 9850 2200 50  0000 R CNN
+F 1 "10k" H 9850 2100 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9880 2100 50  0001 C CNN
+F 3 "~" H 9950 2100 50  0001 C CNN
+	1    9950 2100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9500 1950 9750 1950
+Wire Wire Line
+	10100 1950 10350 1950
+Connection ~ 9750 1950
+Wire Wire Line
+	9750 1950 9800 1950
+Wire Wire Line
+	9500 2400 9750 2400
+Connection ~ 9750 2400
+Wire Wire Line
+	9750 2400 9800 2400
+Connection ~ 10200 2300
+Wire Wire Line
+	10200 1850 10200 2100
+Wire Wire Line
+	10200 2300 10200 2550
+Wire Wire Line
+	10000 3350 10350 3350
+Wire Wire Line
+	10000 3950 10350 3950
+Wire Wire Line
+	10200 3850 10350 3850
+Connection ~ 10200 3850
+Wire Wire Line
+	10200 3850 10200 4200
+Wire Wire Line
+	10200 3550 10350 3550
+Connection ~ 10200 3550
+Wire Wire Line
+	10200 3550 10200 3850
+Wire Wire Line
+	10200 3250 10350 3250
+Connection ~ 10200 3250
+Wire Wire Line
+	10200 3250 10200 3550
+Wire Wire Line
+	9750 2100 9800 2100
+Wire Wire Line
+	9750 1950 9750 2100
+Wire Wire Line
+	10100 2100 10200 2100
+Connection ~ 10200 2100
+Wire Wire Line
+	10200 2100 10200 2300
+Wire Wire Line
+	9750 2550 9800 2550
+Wire Wire Line
+	9750 2400 9750 2550
+Wire Wire Line
+	10100 2550 10200 2550
+Connection ~ 10200 2550
+Wire Wire Line
+	10200 2550 10200 2750
+Text GLabel 9500 2850 0    50   Input ~ 0
+A3
+$Comp
+L Connector:AudioJack2 J20
+U 1 1 5CDF0395
+P 10550 2850
+F 0 "J20" H 10317 2921 50  0000 R CNN
+F 1 "CV3 in" H 10317 2830 50  0000 R CNN
+F 2 "Connector_Audio:AudioJack3StereoNarrow-PJ-321" H 10550 2850 50  0001 C CNN
+F 3 "~" H 10550 2850 50  0001 C CNN
+F 4 "VC input" H 10550 2850 50  0001 C CNN "Function"
+	1    10550 2850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 2750 10200 2750
+$Comp
+L Device:R R27
+U 1 1 5CDF039C
+P 9950 2850
+F 0 "R27" V 9743 2850 50  0000 C CNN
+F 1 "10k" V 9834 2850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9880 2850 50  0001 C CNN
+F 3 "~" H 9950 2850 50  0001 C CNN
+	1    9950 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R28
+U 1 1 5CDF03A2
+P 9950 3000
+F 0 "R28" H 9850 3100 50  0000 R CNN
+F 1 "10k" H 9850 3000 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9880 3000 50  0001 C CNN
+F 3 "~" H 9950 3000 50  0001 C CNN
+	1    9950 3000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9500 2850 9750 2850
+Wire Wire Line
+	10100 2850 10350 2850
+Connection ~ 9750 2850
+Wire Wire Line
+	9750 2850 9800 2850
+Wire Wire Line
+	10200 2750 10200 3000
+Wire Wire Line
+	9750 3000 9800 3000
+Wire Wire Line
+	9750 2850 9750 3000
+Wire Wire Line
+	10100 3000 10200 3000
+Connection ~ 10200 3000
+Connection ~ 10200 2750
+Wire Wire Line
+	10200 3000 10200 3250
+Wire Wire Line
+	6950 1400 7300 1400
+Wire Wire Line
+	6750 750  6850 750 
+Wire Wire Line
+	7150 750  7250 750 
+Connection ~ 7250 750 
+Wire Wire Line
+	10050 1300 10200 1300
+$Comp
+L power:GND #PWR0101
+U 1 1 5CFE3AED
+P 8900 850
+F 0 "#PWR0101" H 8900 600 50  0001 C CNN
+F 1 "GND" H 8905 677 50  0000 C CNN
+F 2 "" H 8900 850 50  0001 C CNN
+F 3 "" H 8900 850 50  0001 C CNN
+	1    8900 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 750  8900 850 
+Wire Wire Line
+	9450 750  9400 750 
+Wire Wire Line
+	9400 750  9400 1200
+Wire Wire Line
+	9400 1200 9450 1200
+Wire Wire Line
+	9750 750  10200 750 
+Wire Wire Line
+	10200 750  10200 850 
+Connection ~ 10200 1300
+Wire Wire Line
+	10200 1300 10400 1300
+Wire Wire Line
+	10350 1000 10350 1200
+Wire Wire Line
+	10350 1200 10200 1200
+Connection ~ 10200 1200
+Wire Wire Line
+	10200 1200 10200 1300
+Wire Wire Line
+	9100 1400 9450 1400
+Wire Wire Line
+	8900 750  9000 750 
+Wire Wire Line
+	9300 750  9400 750 
+Connection ~ 9400 750 
 $EndSCHEMATC
