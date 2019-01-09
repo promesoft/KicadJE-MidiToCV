@@ -1,6 +1,11 @@
 # Kicad-MidiToCV
 Midi to CV in Eurorack or as standalone
 
+## Physical Construction
+### Single board
+The board can be used as is for a prototype development of MIDI to CV
+### Split board option
+
 ## Base Construction
 Arduino Nano based Controller and MIDI decoder.
 
