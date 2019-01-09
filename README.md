@@ -1,6 +1,8 @@
 # Kicad-MidiToCV
 Midi to CV in Eurorack or as standalone
 
+## Status - Shipping
+
 ## Physical Construction
 ### Single board - MIDI I/O and MIDI to CV
 The board can be used as is for a prototype development of MIDI to CV
