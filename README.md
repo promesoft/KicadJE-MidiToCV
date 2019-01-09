@@ -12,7 +12,7 @@ The main board (with the arduino) has a couple of headers that can be connected 
 ## Base Construction
 Arduino Nano based Controller and MIDI decoder.
 
-![](MIDI2CV_sch.pdf)
+![](MIDI2CV_sch.png)
 ### MIDI In
 MIDI In through a PC814 (or optional PC817) Optocoupler and into the RX pin on the Arduino
 
