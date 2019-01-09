@@ -2,9 +2,12 @@
 Midi to CV in Eurorack or as standalone
 
 ## Physical Construction
-### Single board
+### Single board - MIDI I/O and MIDI to CV
 The board can be used as is for a prototype development of MIDI to CV
-### Split board option
+### Split board Eurorack - MIDI I/O and MIDI to CV
+The board can be devided in two and combined front to front with spacers for a MIDI to CV eurorack module.
+### Split board Options
+The main board (with the arduino) has a couple of headers that can be connected to a different interface board using I2C, Analogue Inputs and Digital I/O.
 
 ## Base Construction
 Arduino Nano based Controller and MIDI decoder.
