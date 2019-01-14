@@ -4,6 +4,7 @@ Midi to CV in Eurorack or as standalone
 ## Status - Shipping
 ### Issues and Notes
 Please note that the PIN1 and PIN2 are GATE. This is note described clearly in http://www.doepfer.de/a100_man/a100t_e.htm and needs to be noted when soldering the IDC header or when cabling if a Pin header has been mounted.
+### Errata
 
 ## Physical Construction
 
