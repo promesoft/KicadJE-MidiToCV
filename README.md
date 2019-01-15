@@ -1,11 +1,15 @@
 # Kicad-MidiToCV
 Midi to CV in Eurorack or as standalone
 
-## Status - Shipping
+## Status - Rev A Shipping
 ### Issues and Notes
 Please note that the PIN1 and PIN2 are GATE. This is note described clearly in http://www.doepfer.de/a100_man/a100t_e.htm and needs to be noted when soldering the IDC header or when cabling if a Pin header has been mounted.
+### Errata
 
 ## Physical Construction
+ - 100x100mm
+ - Separate unit with no alteration
+ - Optional split in 2 for eurorack mount mirrored config
 
 ## MIDI Features
 ### Single board - MIDI I/O and MIDI to CV
