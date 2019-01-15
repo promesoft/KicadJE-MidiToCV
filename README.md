@@ -45,4 +45,4 @@ I2C Dac with 2 options
 ### I2C Dac - Option 2 - one 4 channel DAC
 1x MCP4728
 
-![](Kicad-Midi2CV-3D2.png)
+![](Kicad-Midi2CV-RevA_Top3D_3.png)
