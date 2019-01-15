@@ -11,7 +11,14 @@ Please note that the PIN1 and PIN2 are GATE. This is note described clearly in h
  - Separate unit with no alteration
  - Optional split in 2 for eurorack mount mirrored config
 
-## MIDI Features
+## Vital Components
+ - Jack connectors: PJ-321 (important for the footprint)
+ - Encoder  (important for the footprint and 3D alignment)
+ - MCP4825 module - if chosen (important for CV out function - footprint needs to match)
+ If these are chosen the last two CV jacks should be ommitted.
+ - MCP4728 chip - if chosen (important for the last 2 CV out)
+
+## MIDI Board Features
 ### Single board - MIDI I/O and MIDI to CV
 The board can be used as is for a prototype development of MIDI to CV
 ### Split board Eurorack - MIDI I/O and MIDI to CV
@@ -19,7 +26,7 @@ The board can be devided in two and combined front to front with spacers for a M
 ### Base board Eurorack - MIDI I/O
 If only MIDI features are required the base board can work without the IO section.
 
-## Generic Features
+## Generic Board Features
 ### Split board Options
 The main board (with the arduino) has a couple of headers that can be connected to a different interface board using I2C, Analogue Inputs and Digital I/O.
 ### Non MIDI board
