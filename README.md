@@ -12,7 +12,7 @@ Please note that the PIN1 and PIN2 are GATE. This is note described clearly in h
  - Optional split in 2 for eurorack mount mirrored config
 
 ## Vital Components
- - Arduino Nano - where the magic lives
+ - Arduino Nano - where the magic lives (remember to socket it to be able to reprogram it)
  - Jack connectors: PJ-321 (important for the footprint)
  - KY-40 Encoder module (important for the pullup, footprint and 3D alignment)
  - MCP4825 module - if chosen (important for CV out function - footprint needs to match)
