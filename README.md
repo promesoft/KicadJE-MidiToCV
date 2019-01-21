@@ -36,7 +36,7 @@ The MIDI components can be omitted if the features does not require MIDI, like a
 ## Base Construction
 Arduino Nano based Controller and MIDI decoder.
 
-![](MIDI2CV_sch.png)
+![](MIDI2CV_sch_RevA.png)
 ### MIDI In
 MIDI In through a PC814 (or optional PC817) Optocoupler and into the RX pin on the Arduino
 
@@ -53,4 +53,7 @@ I2C Dac with 2 options
 ### I2C Dac - Option 2 - One 4 channel DAC
 1x MCP4728
 
+#RevB
+![](Kicad-Midi2CV-RevB_Top3D_1.png)
+#RevA
 ![](Kicad-Midi2CV-RevA_Top3D_3.png)
