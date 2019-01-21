@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "MIDI to CV"
-Date "2018-12-26"
-Rev "Rev A2"
+Date "2019-01-21"
+Rev "Rev B"
 Comp "Promesoft"
 Comment1 "Johansen Engineering"
 Comment2 ""
@@ -432,7 +432,7 @@ L Device:C C10
 U 1 1 5C289E13
 P 1650 7400
 F 0 "C10" H 1765 7446 50  0000 L CNN
-F 1 "10n" H 1765 7355 50  0000 L CNN
+F 1 "100n" H 1765 7355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1688 7250 50  0001 C CNN
 F 3 "~" H 1650 7400 50  0001 C CNN
 	1    1650 7400
@@ -443,7 +443,7 @@ L Device:C C11
 U 1 1 5C289F13
 P 2000 7450
 F 0 "C11" H 2115 7496 50  0000 L CNN
-F 1 "10n" H 2115 7405 50  0000 L CNN
+F 1 "100n" H 2115 7405 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2038 7300 50  0001 C CNN
 F 3 "~" H 2000 7450 50  0001 C CNN
 	1    2000 7450
@@ -1311,7 +1311,7 @@ Wire Wire Line
 Wire Wire Line
 	4050 3700 3950 3700
 Wire Wire Line
-	3950 3700 3950 2250
+	3950 3700 3950 2950
 Wire Wire Line
 	2500 2600 2500 2650
 Wire Wire Line
@@ -1347,7 +1347,7 @@ MIDI-OUT
 Wire Wire Line
 	2850 3550 2850 3600
 Wire Wire Line
-	4050 3600 2850 3600
+	4050 3600 3850 3600
 Connection ~ 2850 3600
 Wire Wire Line
 	2850 3600 2850 3650
@@ -2158,4 +2158,30 @@ CV
 Wire Wire Line
 	5800 800  5700 800 
 Connection ~ 5700 800 
+$Comp
+L Device:Jumper JP2
+U 1 1 5C49E79B
+P 3550 3600
+F 0 "JP2" H 3550 3864 50  0000 C CNN
+F 1 "Rx" H 3550 3773 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 3550 3600 50  0001 C CNN
+F 3 "~" H 3550 3600 50  0001 C CNN
+	1    3550 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 3600 2850 3600
+$Comp
+L Device:Jumper JP1
+U 1 1 5C49E893
+P 3950 2650
+F 0 "JP1" V 3904 2776 50  0000 L CNN
+F 1 "Tx" V 3995 2776 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 3950 2650 50  0001 C CNN
+F 3 "~" H 3950 2650 50  0001 C CNN
+	1    3950 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3950 2350 3950 2250
 $EndSCHEMATC
