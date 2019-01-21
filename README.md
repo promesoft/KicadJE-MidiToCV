@@ -48,9 +48,9 @@ Gate pins from Arduino
 
 ## CV Out
 I2C Dac with 2 options
-### I2C Dac - Option 1 2 Single channel DAC
+### I2C Dac - Option 1 - Two Single channel DAC
 2x MCP4725 DAC 
-### I2C Dac - Option 2 - one 4 channel DAC
+### I2C Dac - Option 2 - One 4 channel DAC
 1x MCP4728
 
 ![](Kicad-Midi2CV-RevA_Top3D_3.png)
