@@ -5,7 +5,8 @@ Midi to CV in Eurorack or as standalone
 ### Issues and Notes
 Please note that the PIN1 and PIN2 are GATE. This is note described clearly in http://www.doepfer.de/a100_man/a100t_e.htm and needs to be noted when soldering the IDC header or when cabling if a Pin header has been mounted.
 ### Errata
-
+ * Footprint of PJ-321 has too small drill holes (1mm)
+ * Footprint of PJ-321 is too narrow in the rear end :) - minor issue
 ## Physical Construction
  - 100x100mm
  - Separate unit with no alteration
