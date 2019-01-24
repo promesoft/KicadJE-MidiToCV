@@ -9,9 +9,9 @@
  *  
  * 28/12-2018
 */
-#define SWpin A0
-#define Apin A1 //add 47nF to GND for debounce
-#define Bpin A2 //add 47nF to GND for debounce
+#define SWpin A0 //add 10nF to GND for debounce (not essential
+#define Apin A1 //add 47nF/100nF to GND for debounce
+#define Bpin A2 //add 47nF/100nF to GND for debounce
 #define CV3in A3
 #define SDA A4
 #define SCL A5
@@ -76,39 +76,10 @@ void setup(){
 
 void loop(){
 //  if (left||right||button){
+  checkencoder();
 
-  if (left){
-    left = false;
-    if (encoder != 0) encoder--;
-    updateLED(encoder >> 2);
-  }
-  if (right){
-    right = false;
-    if (encoder < 0x3f) encoder++;
-    updateLED(encoder >> 2);
-  }
-  if (button){
-    button = false;    
-    LEDSel2Data = SW_old;
-    LEDSelData = !SW_old;
-    buttoncnt++;
-  }
-  digitalWrite(LED1, LED1Data);
-  digitalWrite(LED2, LED2Data);
-  digitalWrite(LED3, LED3Data);
-  digitalWrite(LED4, LED4Data);
-  delay(1);
-  digitalWrite(LEDsel, LEDSelData);
-  digitalWrite(LEDsel2, LEDSel2Data);
-  delay(1);
+  updateLED();
 
-  digitalWrite(LED1, LOW);
-  digitalWrite(LED2, LOW);
-  digitalWrite(LED3, LOW);
-  digitalWrite(LED4, LOW);
-  digitalWrite(LEDsel, LOW);
-  digitalWrite(LEDsel2, LOW);
-  delay(2);
 }
 /* =====================================================
 ========================================================
@@ -147,12 +118,32 @@ ISR (PCINT1_vect) {
     }
   }
 }
-
-
 /* =====================================================
 ========================================================
 ======================================================*/ 
-void updateLED(unsigned int nibble)
+void checkencoder(){
+  if (left){
+    left = false;
+    if (encoder != 0) encoder--;
+    updateLEDValue(encoder >> 2);
+  }
+  if (right){
+    right = false;
+    if (encoder < 0x3f) encoder++;
+    updateLEDValue(encoder >> 2);
+  }
+  if (button){
+    button = false;    
+    buttoncnt++;
+    buttoncnt = buttoncnt & B00000111)
+    LEDSel2Data = buttoncnt && B00000100;
+    LEDSelData = buttoncnt && B00000010;
+    }
+}
+/* =====================================================
+========================================================
+======================================================*/ 
+void updateLEDValue(unsigned int nibble)
 {
   if (nibble >= 0x10) nibble = 0x0f;
   else (nibble = nibble & 0x0f);
@@ -182,3 +173,25 @@ void updateLED(unsigned int nibble)
   }
 
 }
+/* =====================================================
+========================================================
+======================================================*/ 
+void updateLED(){
+  digitalWrite(LED1, LED1Data);
+  digitalWrite(LED2, LED2Data);
+  digitalWrite(LED3, LED3Data);
+  digitalWrite(LED4, LED4Data);
+  delay(1);
+  digitalWrite(LEDsel, LEDSelData);
+  digitalWrite(LEDsel2, LEDSel2Data);
+  delay(1);
+
+  digitalWrite(LED1, LOW);
+  digitalWrite(LED2, LOW);
+  digitalWrite(LED3, LOW);
+  digitalWrite(LED4, LOW);
+  digitalWrite(LEDsel, LOW);
+  digitalWrite(LEDsel2, LOW);
+  delay(2);
+}
+ 
