@@ -135,9 +135,9 @@ void checkencoder(){
   if (button){
     button = false;    
     buttoncnt++;
-    buttoncnt = buttoncnt & B00000111)
-    LEDSel2Data = buttoncnt && B00000100;
-    LEDSelData = buttoncnt && B00000010;
+    buttoncnt = buttoncnt & B00000111;
+    LEDSel2Data = buttoncnt & B00000100;
+    LEDSelData = buttoncnt & B00000010;
     }
 }
 /* =====================================================
