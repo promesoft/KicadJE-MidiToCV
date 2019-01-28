@@ -9,7 +9,7 @@ Please note that the PIN1 and PIN2 are GATE. This is note described clearly in h
  * The two pots on the breakout board are too close for adding a knob
  * The orientation of the pinheader for the MCP4725 module - if mounted incorrectly the magic smoke disappears
  * 0R could be replaced with SMD jumpers
- * Consider a 200 mA fuse for +5V pwr
+ * Consider a 200 mA fuse for Vin and 50mA for +5V pwr
  * The mounting hole that is off center is not matching both boards
 ### Errata
  * Footprint of PJ-321 has too small drill holes (1mm)
