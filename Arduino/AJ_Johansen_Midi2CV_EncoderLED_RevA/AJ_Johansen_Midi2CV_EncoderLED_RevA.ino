@@ -1,6 +1,6 @@
-/* Johansen Encoder test
+/* Promesoft / Johansen Engineering MIDI2CV
  *  
- * Inspiration from
+ * Encoder Inspiration from
  * Kevin Darrah http://www.kevindarrah.com/?page_id=1348
  * https://www.youtube.com/watch?v=HQuLZHsGZdI
  * https://thewanderingengineer.com/2014/08/11/arduino-pin-change-interrupts/
@@ -13,16 +13,19 @@
 
 
 /* =====================================================
+==============INIT DATA STRUCTURES======================
 ======================================================*/  
-void setupLEDData(){
+void setupDataStruct(){
    for (int i=0; i <= 3; i++){
      for (int j=0; j <= 3; j++){
       LEDData[i][j]=false;
      }
      encoder[i] = 0;
+     MIDI_CH[i] = 0;
    }
 }
 /* =====================================================
+==============SETUP=====================================
 ======================================================*/  
 void setup(){
   Serial.begin(38400);
@@ -32,7 +35,9 @@ void setup(){
   Serial.print("Build date: ");
   Serial.println(__DATE__);
   delay(50);  
-  setupLEDData();
+  setupDataStruct();
+//  MIDI_CH[0] = 0;
+//  MIDI_CH[1] = 0;
   
 /* =====================================================*/
   pinMode(SWpin, INPUT);
@@ -51,6 +56,12 @@ void setup(){
   pinMode(LEDsel, OUTPUT);
   pinMode(LEDsel2, OUTPUT);
   
+  digitalWrite(LED1, HIGH);
+  digitalWrite(LED2, HIGH);
+  digitalWrite(LED3, HIGH);
+  digitalWrite(LED4, HIGH);
+  delay(300);
+
   updateLED();
 
 /* =====================================================*/
@@ -59,20 +70,16 @@ void setup(){
   // Enable Pin Change Interrupt for A0, A1, A2
   PCMSK1 = 0b00000111; 
 
-  delay(1000); //Safety before MIDI takes over
-/* =====================================================
-  MIDI.begin(MIDI_CHANNEL_OMNI); // Initialize the Midi Library.
-// OMNI sets it to listen to all channels.. MIDI.begin(2) would set it
-// to respond to channel 2 notes only.
-  MIDI.setHandleNoteOn(MyHandleNoteOn); // This is important!! This command
-  // tells the Midi Library which function I want called when a Note ON command
-  // is received. in this case it's "MyHandleNoteOn".
-  */
+//Safety before MIDI takes over so the arduino can be reprogrammed
+  delay(1000); 
+/* =====================================================*/
   setupMidi();
 }//setup
 
 /* =====================================================
+==============MAIN LOOP=================================
 ======================================================*/  
+//unsigned long oldmilis;
 
 void loop(){
   checkencoder();                  //Check encoder and update values
@@ -82,54 +89,21 @@ void loop(){
 //  updateLEDValue(midi_channel, 0); //Update current midi chan for state 0
   updateLEDValue(MIDI_CH[0], 0); //Update current midi chan for state 0
   clearLED();                      //LED off (dim light)
-  
+/*  if (millis() - oldmilis > 2000){
+    oldmilis = millis();
+    MIDI.sendNoteOn(100, 100, 2);
+  }*/
 }
-/* =====================================================
-==============Encoder change interrupt==================
-======================================================*/  
 
-ISR (PCINT1_vect) {
-// If interrupt is triggered by the button
-  boolean SW_val = digitalRead(SWpin);
-  if (SW_val != SW_old) {
-    SW_old = SW_val;
-    button = true;}
-
-// Else if interrupt is triggered by encoder signals
-  else {
-    
-    // Read A and B signals
-    boolean A_val = digitalRead(Apin);
-    if (A_val != A_old) {
-      A_old = A_val;
-      if (A_val^B_old) {
-        right = true;
-      }
-      else {
-        left = true;
-      }
-    }
-    else {
-      boolean B_val = digitalRead(Bpin);
-      B_old = B_val;
-      if (A_val^B_val) {
-        left = true;
-      }
-      else {
-        right = true;
-      }
-    }
-  }
-}
 /* =====================================================
-========================================================
+==============Check encoder interrupt===================
 ======================================================*/ 
 void checkencoder(){
   if (left){
     left = false;
     if (encoder[state] != 0) encoder[state]--;
     if (state != 0) {
-      MIDI_CH[state]=encoder[state] >> 2;
+      if((MIDI_CH[state]=encoder[state] >> 2) == 0) MIDI_CH[state]=16;
       updateLEDValue(MIDI_CH[state], state);
     }
   }
@@ -149,7 +123,7 @@ void checkencoder(){
     }
 }
 /* =====================================================
-========================================================
+==============Update LED Values based on input==========
 ======================================================*/ 
 void updateLEDValue(unsigned int nibble,unsigned int updstate)
 {
@@ -190,7 +164,7 @@ void updateLEDValue(unsigned int nibble,unsigned int updstate)
 
 }
 /* =====================================================
-========================================================
+==============Update LED's based on LED Values==========
 ======================================================*/ 
 void updateLED(){
   digitalWrite(LED1, LEDData[state][0]);
@@ -210,4 +184,41 @@ void clearLED(){
   digitalWrite(LEDsel, LOW);
   digitalWrite(LEDsel2, LOW);
 }
- 
+
+/* =====================================================
+==============Encoder change interrupt==================
+======================================================*/  
+
+ISR (PCINT1_vect) {
+// If interrupt is triggered by the button
+  boolean SW_val = digitalRead(SWpin);
+  if (SW_val != SW_old) {
+    SW_old = SW_val;
+    button = true;}
+
+// Else if interrupt is triggered by encoder signals
+  else {
+    
+    // Read A and B signals
+    boolean A_val = digitalRead(Apin);
+    if (A_val != A_old) {
+      A_old = A_val;
+      if (A_val^B_old) {
+        right = true;
+      }
+      else {
+        left = true;
+      }
+    }
+    else {
+      boolean B_val = digitalRead(Bpin);
+      B_old = B_val;
+      if (A_val^B_val) {
+        left = true;
+      }
+      else {
+        right = true;
+      }
+    }
+  }
+}

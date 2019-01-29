@@ -422,9 +422,9 @@ Wire Notes Line
 Wire Notes Line
 	600  3050 600  4650
 Wire Wire Line
-	1650 3650 1700 3650
+	1650 3650 1675 3650
 Wire Wire Line
-	1300 3850 1700 3850
+	1300 3850 1475 3850
 Wire Wire Line
 	1300 3650 1350 3650
 $Comp
@@ -1316,12 +1316,7 @@ Wire Wire Line
 	2500 2300 2500 2250
 Wire Wire Line
 	2500 2250 2350 2250
-Wire Wire Line
-	2500 2650 2150 2650
-Wire Wire Line
-	2150 2650 2150 2450
 Connection ~ 2500 2650
-Connection ~ 2150 2650
 Wire Wire Line
 	1650 2050 2150 2050
 Wire Wire Line
@@ -2182,8 +2177,6 @@ Wire Wire Line
 	650  2650 650  2050
 Wire Wire Line
 	650  2050 700  2050
-Wire Wire Line
-	650  2650 2150 2650
 $Comp
 L Device:R R?
 U 1 1 5C5491E2
@@ -2216,5 +2209,70 @@ F 3 "~" H 3000 2250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2850 2250 2500 2250
+	2850 2250 2725 2250
+$Comp
+L Device:R R?
+U 1 1 5C589676
+P 2475 2050
+F 0 "R?" V 2268 2050 50  0000 C CNN
+F 1 "OPEN" V 2359 2050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2405 2050 50  0001 C CNN
+F 3 "~" H 2475 2050 50  0001 C CNN
+	1    2475 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 2050 2325 2050
+Wire Wire Line
+	2625 2050 2725 2050
+Wire Wire Line
+	2725 2050 2725 2250
+Connection ~ 2725 2250
+Wire Wire Line
+	2725 2250 2500 2250
+$Comp
+L Device:R R?
+U 1 1 5C5CBC55
+P 2000 2550
+F 0 "R?" V 1793 2550 50  0000 C CNN
+F 1 "OPEN" V 1884 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1930 2550 50  0001 C CNN
+F 3 "~" H 2000 2550 50  0001 C CNN
+	1    2000 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 2550 2150 2450
+Wire Wire Line
+	650  2650 1775 2650
+Wire Wire Line
+	1850 2550 1775 2550
+Wire Wire Line
+	1775 2550 1775 2650
+Connection ~ 1775 2650
+Wire Wire Line
+	1775 2650 2500 2650
+$Comp
+L Diode:1N4148W D?
+U 1 1 5C5EDE95
+P 1675 3975
+F 0 "D?" V 1629 4055 50  0000 L CNN
+F 1 "1N4148W" V 1720 4055 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 1675 3800 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 1675 3975 50  0001 C CNN
+	1    1675 3975
+	0    1    1    0   
+$EndComp
+Connection ~ 1675 3650
+Wire Wire Line
+	1675 3650 1700 3650
+Wire Wire Line
+	1675 3825 1675 3650
+Wire Wire Line
+	1675 4125 1475 4125
+Wire Wire Line
+	1475 4125 1475 3850
+Connection ~ 1475 3850
+Wire Wire Line
+	1475 3850 1700 3850
 $EndSCHEMATC

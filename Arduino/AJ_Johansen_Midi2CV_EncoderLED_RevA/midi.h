@@ -17,18 +17,6 @@ byte midiRead(){
 //  return midi_channel;
 }
 
-void ForwardMidiEvent(byte channel_in, byte channel_out, byte pitch, byte velocity) {
-  digitalWrite(LED4, HIGH);
-
-  delay(300);
-  
-  digitalWrite(LED4, LOW);
-
-  delay(300);
-
-  digitalWrite(LED4, HIGH);
-
-}
 // Below is my function that will be called by the Midi Library
 // when a MIDI NOTE ON message is received.
 // It will be passed bytes for Channel, Pitch, and Velocity
@@ -40,7 +28,8 @@ void MyHandleNoteOn(byte channel, byte pitch, byte velocity) {
   int velVal = 0;
   
   MIDI_CH[0]=channel;
-  if (MIDI_CH[0] == MIDI_CH[1]) ForwardMidiEvent(MIDI_CH[1], MIDI_CH[2], pitch, velocity);
+  if (MIDI_CH[0] == MIDI_CH[1]) MIDI.sendNoteOn(pitch, velocity, MIDI_CH[2]);
+//  MIDI.sendNoteOn(pitch, velocity, MIDI_CH[2]);
 /*  DACnum = pitches[pitch-36]; //-36 to transpose bottom of CASIO keyboard to C0.
   dac.setVoltage(DACnum, false);
   Serial.print("channel: ");
@@ -88,5 +77,5 @@ void MyHandleNoteOff(byte channel, byte pitch, byte velocity) {
   int velVal = 0;
   
   MIDI_CH[0]=channel;
-  if (MIDI_CH[0] == MIDI_CH[1]) ForwardMidiEvent(MIDI_CH[1], MIDI_CH[2], pitch, velocity);
+  if (MIDI_CH[0] == MIDI_CH[1]) MIDI.sendNoteOff(pitch, velocity, MIDI_CH[2]);
 }
