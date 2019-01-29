@@ -11,16 +11,17 @@ Please note that the PIN1 and PIN2 are GATE. This is note described clearly in h
  * 0R could be replaced with SMD jumpers
  * Consider a 200 mA fuse for Vin and 50mA for +5V pwr
  * The mounting hole that is off center is not matching both boards
- * Midi out not working - PCB workaround mod possible  
+### Errata
+ * Footprint of PJ-321 has too small drill holes (1mm) - major
+ * Footprint of PJ-321 is too narrow in the rear end :) - minor issue
+ * Midi out circuit is WRONG - Major
+### Workarounds
+* Midi out not working - PCB workaround mod possible  
  * --Remove GND around DIN pin 5 (bottom copper side)
  * --Cut GND track to DIN pin 5 (top copper side)
  * --Remove Q1, R6, R9
  * --Connect 220R THT to base pad on Q1
  * --Connect C and E on Q1
-### Errata
- * Footprint of PJ-321 has too small drill holes (1mm) - major
- * Footprint of PJ-321 is too narrow in the rear end :) - minor issue
- * Midi out circuit is WRONG - Major
 ## Physical Construction
  - 100x100mm
  - Separate unit with no alteration
