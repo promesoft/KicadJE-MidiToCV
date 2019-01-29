@@ -13,6 +13,7 @@ Please note that the PIN1 and PIN2 are GATE. This is note described clearly in h
  * The mounting hole that is off center is not matching both boards
  * Midi out not working - PCB workaround mod possible  
  * --Remove GND around DIN pin 5 (bottom copper side)
+ * --Cut GND track to DIN pin 5 (top copper side)
  * --Remove Q1, R6, R9
  * --Connect 220R THT to base pad on Q1
  * --Connect C and E on Q1
