@@ -12,7 +12,7 @@ Please note that the PIN1 and PIN2 are GATE. This is note described clearly in h
  * Consider a 200 mA fuse for Vin and 50mA for +5V pwr
  * The mounting hole that is off center is not matching both boards
  * Midi out not working - PCB workaround mod possible  
- * --Remove GND around DIN pin 5
+ * --Remove GND around DIN pin 5 (bottom copper side)
  * --Remove Q1, R6, R9
  * --Connect 220R THT to base pad on Q1
  * --Connect C and E on Q1
