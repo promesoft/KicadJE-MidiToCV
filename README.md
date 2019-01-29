@@ -1,9 +1,16 @@
 # Kicad-MidiToCV
 Midi to CV in Eurorack or as standalone
 
-## Status - Rev A Shipping
+## Status - Rev B - Ongoing PCB layout
+
+## Status - Rev A Mounted - Midi code in progress
 ### Issues and Notes
 Please note that the PIN1 and PIN2 are GATE. This is note described clearly in http://www.doepfer.de/a100_man/a100t_e.htm and needs to be noted when soldering the IDC header or when cabling if a Pin header has been mounted.
+ * The two pots on the breakout board are too close for adding a knob
+ * The orientation of the pinheader for the MCP4725 module - if mounted incorrectly the magic smoke disappears
+ * 0R could be replaced with SMD jumpers
+ * Consider a 200 mA fuse for Vin and 50mA for +5V pwr
+ * The mounting hole that is off center is not matching both boards
 ### Errata
  * Footprint of PJ-321 has too small drill holes (1mm)
  * Footprint of PJ-321 is too narrow in the rear end :) - minor issue
