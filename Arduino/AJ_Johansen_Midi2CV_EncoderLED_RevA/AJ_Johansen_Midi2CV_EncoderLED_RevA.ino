@@ -1,5 +1,21 @@
-/* Promesoft / Johansen Engineering MIDI2CV
+/*  Promesoft / Johansen Engineering MIDI2CV
  *  
+ *  29/01-2019
+ *  Initial working Midi in/out prototype
+ *  Midi2CV not enabled
+ *  Midi channel in filter and map to different channel
+ *  
+ *  LED status 00 - shows last incoming midi channel
+ *  LED status 01 - selects incoming midi channel (0 = any)
+ *  LED status 10 - selects outgoing midi channel (translated from incoming) (0=ch 16)
+ *  LED status 11 - selects midi channel for Midi2CV (0 = any)
+ *  
+ *  Midi thru enabled - resulting in duplicate midi events in different channels when matching incoming midi channel filter
+ *  
+ * ACKNOWLEDGEMENTS 
+ * 29/01-2019
+ * Francois Best for Arduino MIDI Library
+ * 28/12-2018
  * Encoder Inspiration from
  * Kevin Darrah http://www.kevindarrah.com/?page_id=1348
  * https://www.youtube.com/watch?v=HQuLZHsGZdI
@@ -7,7 +23,6 @@
  * and  
  * https://www.allaboutcircuits.com/projects/how-to-use-a-rotary-encoder-in-a-mcu-based-project/ 
  *  
- * 28/12-2018
 */
 #include "midi.h";
 
@@ -36,8 +51,6 @@ void setup(){
   Serial.println(__DATE__);
   delay(50);  
   setupDataStruct();
-//  MIDI_CH[0] = 0;
-//  MIDI_CH[1] = 0;
   
 /* =====================================================*/
   pinMode(SWpin, INPUT);
@@ -103,7 +116,7 @@ void checkencoder(){
     left = false;
     if (encoder[state] != 0) encoder[state]--;
     if (state != 0) {
-      if((MIDI_CH[state]=encoder[state] >> 2) == 0) MIDI_CH[state]=16;
+      if(((MIDI_CH[state]=encoder[state] >> 2) == 0) && state == 2) MIDI_CH[state]=16;
       updateLEDValue(MIDI_CH[state], state);
     }
   }
