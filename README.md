@@ -1,7 +1,7 @@
 # Kicad-MidiToCV
 Midi to CV in Eurorack or as standalone
 
-## Status - Rev B - Ongoing PCB layout
+## Status - Rev B - Ongoing PCB layout and Sch update
 
 ## Status - Rev A Mounted - Midi code in progress
 ### Issues and Notes
