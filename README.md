@@ -22,6 +22,7 @@ Please note that the PIN1 and PIN2 are GATE. This is note described clearly in h
  * --Remove Q1, R6, R9
  * --Connect 220R THT to base pad on Q1
  * --Connect C and E on Q1
+ * --Add GND wire to pin2 of MIDI out DIN
 ## Physical Construction
  - 100x100mm
  - Separate unit with no alteration
