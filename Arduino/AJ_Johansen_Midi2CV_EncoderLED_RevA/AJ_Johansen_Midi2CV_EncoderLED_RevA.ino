@@ -37,8 +37,10 @@ void setupDataStruct(){
      for (int j=0; j <= 3; j++){
       LEDData[i][j]=false;
      }
-     encoder[i] = 0;
-     MIDI_CH[i] = 0;
+     MIDI_CH[i] = EEPROM.read(i);
+     if (MIDI_CH[i] > 15) MIDI_CH[i] = 0;
+      updateLEDValue(MIDI_CH[i], i);
+      encoder[i] = MIDI_CH[i] << 2;
    }
 }
 /* =====================================================
@@ -120,6 +122,7 @@ void checkencoder(){
     if (state != 0) {
       if(((MIDI_CH[state]=encoder[state] >> 2) == 0) && state == 2) MIDI_CH[state]=16;
       updateLEDValue(MIDI_CH[state], state);
+      EEPROM.write(state, MIDI_CH[state]);
     }
   }
   if (right){
@@ -128,6 +131,7 @@ void checkencoder(){
     if (state != 0) {
       MIDI_CH[state]=encoder[state] >> 2;
       updateLEDValue(MIDI_CH[state], state);
+      EEPROM.write(state, MIDI_CH[state]);
     }
   }
   if (button){
