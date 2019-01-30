@@ -12,6 +12,8 @@
  *  
  *  Midi thru enabled - resulting in duplicate midi events in different channels when matching incoming midi channel filter
  *  
+ *  Todo: Midi2CV - Persistance - MidiThru selection?
+ *  
  * ACKNOWLEDGEMENTS 
  * 29/01-2019
  * Francois Best for Arduino MIDI Library
