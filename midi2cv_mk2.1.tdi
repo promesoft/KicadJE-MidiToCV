@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MavericksFile>
+  <Thumbnail>iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIUSURBVHhe7dMxAcAgEMDAb/17hg4dIQrulijIsz4DHL1/gQODQDAIBINAMAgEg0AwCASDQDAIBINAMAgEg0AwCASDQDAIBINAMAgEg0AwCASDQDAIBINAMAgEg0AwCASDQDAIBINAMAgEg0AwCASDQDAIBINAMAgEg0AwCASDQDAIBINAMAgEg0AwCASDQDAIBINAMAgEg0AwCASDQDAIBINAMAgEg0AwCASDQDAIBINAMAgEg0AwCASDQDAIBINAMAgEg0AwCASDQDAIBINAMAgEg0AwCASDQDAIBINAMAgEg0AwCASDQDAIBINAMAgEg0AwCASDQDAIBINAMAgEg0AwCASDQDAIBINAMAgEg0AwCASDQDAIBINAMAgEg0AwCASDQDAIBINAMAgEg0AwCASDQDAIBINAMAgEg0AwCASDQDAIBINAMAgEg0AwCASDQDAIBINAMAgEg0AwCASDQDAIBINAMAgEg0AwCASDQDAIBINAMAgEg0AwCASDQDAIBINAMAgEg0AwCASDQDAIBINAMAgEg0AwCASDQDAIBINAMAgEg0AwCASDQDAIBINAMAgEg0AwCASDQDAIBINAMAgEg0AwCASDQDAIBINAMAgEg0AwCASDQDAIBINAMAgEg0AwCASDQDAIBINAMAgEg0AwCASDQDAIBINAMAgEg0AwCASDQDAIBINAMAgEg0AwCFzNbFPZBYyCzVK3AAAAAElFTkSuQmCC</Thumbnail>
+  <SummaryProperties>
+    <Title></Title>
+    <Description></Description>
+    <CreatedBy></CreatedBy>
+    <ModifiedBy></ModifiedBy>
+    <Created>3/13/2013 10:16:51 AM</Created>
+    <Modified>2/15/2016 9:00:33 PM</Modified>
+    <Version></Version>
+  </SummaryProperties>
+  <CustomProperties />
+  <Unit>mm</Unit>
+  <UnitDecimals>0</UnitDecimals>
+  <ColorsPalette>#FFFFFFFF,#FFFFFF00,#FFFF00FF,#FF00FFFF,#FFFF0000,#FF00FF00,#FF0000FF,#FF000000,#FFA0A0A0,#FF808080,#FF606060,#FF404040,#FF202020,#FF101010,#FFFFFFFF,#FFFFFFFF</ColorsPalette>
+  <EmbeddedImages />
+  <Script></Script>
+  <FillsPalette>
+    <FillProperties>
+      <Fill FillType="Solid" RotateWithShape="True" SolidFillColor="#FFA0A0A0" />
+    </FillProperties>
+    <FillProperties>
+      <Fill FillType="Gradient" RotateWithShape="True" GradientType="Linear" GradientAngle="90" GradientRadialCenter="0,0">
+        <GradientStop Percentage="0" Color="#FF000000" />
+        <GradientStop Percentage="1" Color="#FFFFFFFF" />
+      </Fill>
+    </FillProperties>
+    <FillProperties>
+      <Fill FillType="Texture" RotateWithShape="True" GradientAngle="0" TextureName="Pave1.jpg" Transparency="0" TileTexture="True" Offset="0,0" Scale="2,2" Alignment="Center" IsAppTexture="True" />
+    </FillProperties>
+    <FillProperties>
+      <Fill FillType="Solid" RotateWithShape="True" SolidFillColor="#FF000000" />
+    </FillProperties>
+    <FillProperties>
+      <Fill FillType="Solid" RotateWithShape="True" SolidFillColor="#FFFF0000" />
+    </FillProperties>
+    <FillProperties>
+      <Fill FillType="Gradient" RotateWithShape="True" GradientType="Radial" GradientAngle="90" GradientRadialCenter="0,0">
+        <GradientStop Percentage="0" Color="#FF000000" />
+        <GradientStop Percentage="1" Color="#FFFFFFFF" />
+      </Fill>
+    </FillProperties>
+    <FillProperties>
+      <Fill FillType="Texture" RotateWithShape="True" GradientAngle="0" TextureName="Linoleum1.jpg" Transparency="0" TileTexture="True" Offset="0,0" Scale="2,2" Alignment="Center" IsAppTexture="True" />
+    </FillProperties>
+    <FillProperties>
+      <Fill FillType="Solid" RotateWithShape="True" SolidFillColor="#FF000000" />
+    </FillProperties>
+    <FillProperties>
+      <Fill FillType="Solid" RotateWithShape="True" SolidFillColor="#FF00FF00" />
+    </FillProperties>
+    <FillProperties>
+      <Fill FillType="Solid" RotateWithShape="True" SolidFillColor="#FF000000" />
+    </FillProperties>
+    <FillProperties>
+      <Fill FillType="Solid" RotateWithShape="True" SolidFillColor="#FF000000" />
+    </FillProperties>
+    <FillProperties>
+      <Fill FillType="Solid" RotateWithShape="True" SolidFillColor="#FF000000" />
+    </FillProperties>
+    <FillProperties>
+      <Fill FillType="Solid" RotateWithShape="True" SolidFillColor="#FF0000FF" />
+    </FillProperties>
+    <FillProperties>
+      <Fill FillType="Solid" RotateWithShape="True" SolidFillColor="#FF000000" />
+    </FillProperties>
+    <FillProperties>
+      <Fill FillType="Solid" RotateWithShape="True" SolidFillColor="#FF000000" />
+    </FillProperties>
+    <FillProperties>
+      <Fill FillType="Solid" RotateWithShape="True" SolidFillColor="#FF000000" />
+    </FillProperties>
+  </FillsPalette>
+  <Symbols />
+  <Project LongName="" Phase="undefined">
+    <Site>
+      <Building>
+        <BuildingStorey>
+          <BuildingElements WallsFillColor="#FFA0A0A0" IsWallFillHatched="False" WallFillHatchedSpacing="40" IsNoWallsStyle="False">
+            <Effect EffectType="None" Color="#C8000000" BlurSize="50" Offset="50,50" />
+          </BuildingElements>
+          <DraftingElements />
+          <FurnishingElements />
+          <LandscapeElements />
+          <Group ID="0" Label="" Description="" ReferencePoints="" Elements="" />
+        </BuildingStorey>
+      </Building>
+    </Site>
+    <PhysicsElements>
+      <World Gravity="0,-0.98" />
+    </PhysicsElements>
+    <Layers />
+  </Project>
+  <Views>
+    <PlanView ZoomScale="0.213742544683861" ZoomPanX="1502.07884407578" ZoomPanY="937.69051875932" FreehandEffect="False" ConstructionLinesEffect="False" IsGridVisible="True" GridStep="152.4" IsLineTypeScaled="True" LineTypeSize="100" ShowSpecialText="False" DrawingScale="1:1" IsThicknessScaled="false">
+      <SnapTypesDefaults Center="True" Extremity="True" WallExtremity="True" Grid="True" Intersection="True" Projection="True" Tangent="True" Middle="True" />
+    </PlanView>
+  </Views>
+</MavericksFile>
