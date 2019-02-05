@@ -2,7 +2,7 @@
 Midi to CV in Eurorack or as standalone
 
 ## Status - Rev B - Ongoing PCB layout and Sch update
-
+Set on hold - MK2 is in progress ATM
 ## Status - Rev A Mounted - Midi code in progress
 ### Issues and Notes
 Please note that the PIN1 and PIN2 are GATE. This is note described clearly in http://www.doepfer.de/a100_man/a100t_e.htm and needs to be noted when soldering the IDC header or when cabling if a Pin header has been mounted.
@@ -16,7 +16,7 @@ Please note that the PIN1 and PIN2 are GATE. This is note described clearly in h
  * Footprint of PJ-321 is too narrow in the rear end :) - minor issue
  * Midi out circuit is WRONG - Major
 ### Workarounds
-* Midi out not working - PCB workaround mod possible  
+* Midi out not working - PCB workaround mod partially possible for voltage controlled inputs.
  * --Remove GND around DIN pin 5 (bottom copper side)
  * --Cut GND track to DIN pin 5 (top copper side)
  * --Remove Q1, R6, R9
