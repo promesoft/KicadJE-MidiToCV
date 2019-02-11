@@ -8,7 +8,8 @@
 #define PWM2 9 // Sets Pin PWM2 PWM-Output
 
 //OVERRIDE PIN FOR SQUARE LFO
-#define Square 13 // And Pin 13 as LED for Tempo, you can also use this as a square-LFO 
+#define Square 13    //  Pin as LED for Tempo LED and as a square-LFO 
+#define InvSquare 12 //  Pin as LED for Tempo LED and as a inverted square-LFO 
 
 #define SWpin A0 //add 10nF to GND for debounce (not essential
 #define Apin A1 //add 47nF/100nF to GND for debounce
@@ -31,8 +32,8 @@
 #define Gate3 8
 #define Gate4 9
 
-#define RDY-BSY 12
-#define LDAC 13
+//#define RDY-BSY 12
+//#define LDAC 13
 
 /* -----------------------------------------------
  *  GLOBAL VAR
@@ -46,13 +47,21 @@ boolean LEDData[4][4]; //(see state)
 
 boolean LEDSelData = false, LEDSel2Data = false; 
 unsigned int encoder[4], buttoncnt = 0;
-unsigned int state = 0; //State 00 = MidiDataInChannel - 01 = MIDI CH in select - 10 = MIDI CH OUT select - 11 = MIDI CH 2 CV select
+unsigned int state = 0; 
+//For MIDI In/Out/CV - State 00 = MidiDataInChannel - 01 = MIDI CH in select - 10 = MIDI CH OUT select - 11 = MIDI CH 2 CV select
+//For MIDI In/CV/LFO - State 00 = MIDI CH 1 CV select - 01 = MIDI CH 2 CV select - 10 = LFO Waveform - 11 = LFO Speed
 
 //byte midi_channel=4;
 //Structure for keeping MIDI CH data for processing
+//With LFO state 0 and 1 are reserved for CV MIDI channels
+//With LFO state 2 and 3 are reserved for the LFO settings
 byte MIDI_CH[4]; //(see state)
 
-unsigned long lastwaveupdate = 0;
+unsigned long lastwaveupdate = 0; // LFO millis timer between samples
+unsigned int PWMshape1 = 0;
+unsigned int PWMshape2 = 1;
+unsigned int delayTime = 4; 
+uint8_t tableStep = 0;
 
 
 /* -----------------------------------------------

@@ -11,11 +11,24 @@
 
 //#include "wavetable.h";
 #include "wavetable.h";
-#include "globals.h";
+//#include "globals.h";
+#include "midi.h";
 
-unsigned int PWMshape1,PWMshape2,delayTime; 
-uint8_t tableStep = 10; 
 
+/* =====================================================
+==============INIT DATA STRUCTURES======================
+======================================================*/  
+void setupDataStruct(){
+   for (int i=0; i <= 3; i++){
+     for (int j=0; j <= 3; j++){
+      LEDData[i][j]=false;
+     }
+     MIDI_CH[i] = EEPROM.read(i);
+     if (MIDI_CH[i] > 15) MIDI_CH[i] = 0;
+      updateLEDValue(MIDI_CH[i], i);
+      encoder[i] = MIDI_CH[i] << 2;
+   }
+}
 /* =====================================================
 ==============SETUP=====================================
 ======================================================*/  
@@ -73,7 +86,8 @@ void setup() {
 /* =========Setup LFO Output pins=======================*/
   pinMode(PWM1, OUTPUT);                                           // Sets Pin PWM1 PWM-Output 
   pinMode(PWM2, OUTPUT);                                           // Sets Pin PWM2 PWM-Output 
-  pinMode(Square, OUTPUT);                                          // And Pin 13 as LED for Tempo, you can also use this as a square-LFO 
+  pinMode(Square, OUTPUT);                                          // Pin as LED for Tempo and as a square-LFO 
+  pinMode(InvSquare, OUTPUT);                                          // Pin as LED for Tempo and as a inverted square-LFO 
   
 /* =====================================================*/
   // 1. PCIE1: Pin Change Interrupt Enable 1
@@ -106,7 +120,7 @@ void loop() {
 ======================================================*/ 
 void updatewave(){
 
-if (millis() >= (lastwaveupdate+delayTime){
+if ( millis() >= (lastwaveupdate+delayTime) ){
   lastwaveupdate = millis();
   tableStep++;                                                // Jumps to the next step. 
                                                               /* tableStep is an 8-Bit unsigned integer, 
@@ -118,9 +132,11 @@ if (millis() >= (lastwaveupdate+delayTime){
 /* ===========Update Square Output======================*/
   if(tableStep<128) {                                           // Turn LED on for first half of the cycle, indicate Tempo 
     digitalWrite(Square, HIGH); 
+    digitalWrite(InvSquare, LOW); 
   } 
   else {                                                        // Turn it off for the second half 
-    digitalWrite (Square, LOW); 
+    digitalWrite(Square, LOW); 
+    digitalWrite(InvSquare, HIGH); 
   } 
 /* ===========Update PWM1 Output========================*/
   analogWrite(PWM1, waveTable[PWMshape1][tableStep]);              // Writes the value at the current step in the table to Pin 5 as PWM-Signal.  
@@ -160,7 +176,7 @@ void checkencoder(){
   if (left){
     left = false;
     if (encoder[state] != 0) encoder[state]--;
-    if (state != 0) {
+    if (state < 4) {
       if(((MIDI_CH[state]=encoder[state] >> 2) == 0) && state == 2) MIDI_CH[state]=16;
       updateLEDValue(MIDI_CH[state], state);
       EEPROM.write(state, MIDI_CH[state]);
@@ -169,7 +185,7 @@ void checkencoder(){
   if (right){
     right = false;
     if (encoder[state] < 0x3f) encoder[state]++;
-    if (state != 0) {
+    if (state < 4) {
       MIDI_CH[state]=encoder[state] >> 2;
       updateLEDValue(MIDI_CH[state], state);
       EEPROM.write(state, MIDI_CH[state]);
