@@ -27,8 +27,8 @@ void MyHandleNoteOn(byte channel, byte pitch, byte velocity) {
   int gateVoltage = 0; // used for debugging
   int velVal = 0;
   
-  MIDI_CH[0]=channel;
-  if (MIDI_CH[0] == MIDI_CH[1]) MIDI.sendNoteOn(pitch, velocity, MIDI_CH[2]);
+// From midi in out conversion -  MIDI_CH[0]=channel;
+// From midi in out conversion -  if (MIDI_CH[0] == MIDI_CH[1]) MIDI.sendNoteOn(pitch, velocity, MIDI_CH[2]);
 //  MIDI.sendNoteOn(pitch, velocity, MIDI_CH[2]);
 /*  DACnum = pitches[pitch-36]; //-36 to transpose bottom of CASIO keyboard to C0.
   dac.setVoltage(DACnum, false);
@@ -76,6 +76,6 @@ void MyHandleNoteOff(byte channel, byte pitch, byte velocity) {
   int gateVoltage = 0; // used for debugging
   int velVal = 0;
   
-  MIDI_CH[0]=channel;
-  if (MIDI_CH[0] == MIDI_CH[1]) MIDI.sendNoteOff(pitch, velocity, MIDI_CH[2]);
+// From midi in out conversion -  MIDI_CH[0]=channel;
+// From midi in out conversion -  if (MIDI_CH[0] == MIDI_CH[1]) MIDI.sendNoteOff(pitch, velocity, MIDI_CH[2]);
 }

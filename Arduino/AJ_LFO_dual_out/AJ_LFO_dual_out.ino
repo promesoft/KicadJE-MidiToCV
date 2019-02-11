@@ -128,7 +128,8 @@ if ( millis() >= (lastwaveupdate+delayTime) ){
                                                               automatically "overflow" and go back to 0 when it gets 
                                                               bigger than 255, which is the lenght of the lookup table. 
                                                                */ 
-
+  delayTime =  MIDI_CH[3]<<1;                                 // values from 0 to 15 shifted up 1 
+                                                              // multiplied by 2 as delay from sample to sample 
 /* ===========Update Square Output======================*/
   if(tableStep<128) {                                           // Turn LED on for first half of the cycle, indicate Tempo 
     digitalWrite(Square, HIGH); 
@@ -139,10 +140,12 @@ if ( millis() >= (lastwaveupdate+delayTime) ){
     digitalWrite(InvSquare, HIGH); 
   } 
 /* ===========Update PWM1 Output========================*/
+  PWMshape1 = MIDI_CH[2];
   analogWrite(PWM1, waveTable[PWMshape1][tableStep]);              // Writes the value at the current step in the table to Pin 5 as PWM-Signal.  
 
 
 /* ===========Update PWM2 Output========================*/
+  PWMshape2 = MIDI_CH[2] + 1;
   analogWrite(PWM2, waveTable[PWMshape2][tableStep]);              // Writes the value at the current step in the table to Pin 5 as PWM-Signal.  
   
 }
