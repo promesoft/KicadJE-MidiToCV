@@ -3,6 +3,13 @@
  *  GLOBAL DEFINES
  * -----------------------------------------------
  */
+//OVERRIDE PINS FOR LFO
+#define PWM1 6 // Sets Pin PWM1 PWM-Output
+#define PWM2 9 // Sets Pin PWM2 PWM-Output
+
+//OVERRIDE PIN FOR SQUARE LFO
+#define Square 13 // And Pin 13 as LED for Tempo, you can also use this as a square-LFO 
+
 #define SWpin A0 //add 10nF to GND for debounce (not essential
 #define Apin A1 //add 47nF/100nF to GND for debounce
 #define Bpin A2 //add 47nF/100nF to GND for debounce
@@ -44,6 +51,8 @@ unsigned int state = 0; //State 00 = MidiDataInChannel - 01 = MIDI CH in select 
 //byte midi_channel=4;
 //Structure for keeping MIDI CH data for processing
 byte MIDI_CH[4]; //(see state)
+
+unsigned long lastwaveupdate = 0;
 
 
 /* -----------------------------------------------
