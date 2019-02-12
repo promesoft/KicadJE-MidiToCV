@@ -128,7 +128,8 @@ if ( millis() >= (lastwaveupdate+delayTime) ){
                                                               automatically "overflow" and go back to 0 when it gets 
                                                               bigger than 255, which is the lenght of the lookup table. 
                                                                */ 
-  delayTime =  MIDI_CH[3]<<1;                                 // values from 0 to 15 shifted up 1 
+  Serial.println(MIDI_CH[3]<<1);
+  delayTime =  16 - (MIDI_CH[3]<<1);                                 // values from 0 to 15 shifted up 1 
                                                               // multiplied by 2 as delay from sample to sample 
 /* ===========Update Square Output======================*/
   if(tableStep<128) {                                           // Turn LED on for first half of the cycle, indicate Tempo 
