@@ -58,12 +58,10 @@ unsigned int state = 0;
 byte MIDI_CH[4]; //(see state)
 
 unsigned long lastwaveupdate = 0; // LFO millis timer between samples
-unsigned int PWMshape1 = 0;
-unsigned int PWMshape2 = 1;
+//unsigned int PWMshape = 0;
 unsigned int delayTime = 4; 
 uint8_t tableStep = 0;
-uint8_t PWMdata1 = 0;
-uint8_t PWMdata2 = 0;
+uint8_t PWMdata = 0;
 
 /* -----------------------------------------------
  *  PROTOTYPES

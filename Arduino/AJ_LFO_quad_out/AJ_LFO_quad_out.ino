@@ -117,84 +117,122 @@ void loop() {
 /* =====================================================
 ==============Update LED's based on LED Values==========
 ======================================================*/ 
+char getWaveSample(unsigned int PWMshape){
+    switch (PWMshape) {
+      case 1:
+        PWMdata = tableStep;
+        // Saw wave for shape 1
+        break;
+      case 2:
+        PWMdata = 256-tableStep;
+        // Inv Saw wave for shape 2
+        break;
+      case 3:
+        //Triangle wave for shape 3
+        PWMdata = tableStep * 2;
+        if (tableStep > 127) PWMdata = 256-(2*(tableStep-127)); 
+        break;
+      case 4: // Step 4
+        PWMdata = (tableStep&0b11000000)+64;
+        break;
+      case 5: // Step 8
+        PWMdata = (tableStep&0b11100000)+32;
+        break;
+      case 6: // Step 16
+        PWMdata = (tableStep&0b11110000)+16;
+        break;
+      case 7: // Step 32
+        PWMdata = (tableStep&0b11111000)+8;
+        break;
+      case 8: // Step 4 + noise
+        PWMdata = random(120) * (tableStep>>6);
+        break;
+      case 9: // Step 8 + noise
+        PWMdata = random(60) * (tableStep>>5);
+        break;
+      case 10: // noise
+        PWMdata = random(255);
+        break;
+      case 11: // noise
+        PWMdata = random(128) + tableStep;
+        break;
+      case 12: // ramp and noise
+        if (tableStep < 127 ) {
+          PWMdata = 2 * tableStep;
+        }
+        else {
+          PWMdata = random(255);
+        }
+        break;
+      case 13: // half ramp
+        if (tableStep < 127 ) {
+          PWMdata = 2 * tableStep;
+        }
+        else {
+          PWMdata = 0;
+        }
+        break;
+      case 14: // 25% duty cycle
+        if (tableStep < 63 ) {
+          PWMdata = 255;
+        }
+        else {
+          PWMdata = 0;
+        }
+        break;
+      case 15: // pulse 6% duty cycle
+        if (tableStep < 15 ) {
+          PWMdata = 255;
+        }
+        else {
+          PWMdata = 0;
+        }
+        break;
+      default:
+        // Sine wave for shape 0
+        PWMdata = waveTable[tableStep];
+        break;
+    }
+    return PWMdata;
+}
+/* =====================================================
+==============Update LED's based on LED Values==========
+======================================================*/ 
 void updatewave(){
+  if ( millis() >= (lastwaveupdate+delayTime) ){
+    lastwaveupdate = millis();
+    tableStep++;                                                // Jumps to the next step. 
+                                                                /* tableStep is an 8-Bit unsigned integer, 
+                                                                so it can only store a value between 0 and 255 and will 
+                                                                automatically "overflow" and go back to 0 when it gets 
+                                                                bigger than 255, which is the lenght of the lookup table. 
+                                                                 */ 
+  /*  Serial.print(F("Delay time: "));
+    Serial.print(MIDI_CH[3]<<1);
+    Serial.println(F(" "));*/
+    delayTime =  32 - (MIDI_CH[3]<<1);                                 // values from 0 to 15 shifted up 1 
+                                                                // multiplied by 2 as delay from sample to sample 
+  /* ===========Update Square Output======================*/
+    if(tableStep<128) {                                           // Turn LED on for first half of the cycle, indicate Tempo 
+      digitalWrite(Square, HIGH); 
+      digitalWrite(InvSquare, LOW); 
+    } 
+    else {                                                        // Turn it off for the second half 
+      digitalWrite(Square, LOW); 
+      digitalWrite(InvSquare, HIGH); 
+    } 
+  /* ===========Update PWM1 Output========================*/
+    PWMdata = getWaveSample(MIDI_CH[2]);
 
-if ( millis() >= (lastwaveupdate+delayTime) ){
-  lastwaveupdate = millis();
-  tableStep++;                                                // Jumps to the next step. 
-                                                              /* tableStep is an 8-Bit unsigned integer, 
-                                                              so it can only store a value between 0 and 255 and will 
-                                                              automatically "overflow" and go back to 0 when it gets 
-                                                              bigger than 255, which is the lenght of the lookup table. 
-                                                               */ 
-/*  Serial.print(F("Delay time: "));
-  Serial.print(MIDI_CH[3]<<1);
-  Serial.println(F(" "));*/
-  delayTime =  16 - (MIDI_CH[3]<<1);                                 // values from 0 to 15 shifted up 1 
-                                                              // multiplied by 2 as delay from sample to sample 
-/* ===========Update Square Output======================*/
-  if(tableStep<128) {                                           // Turn LED on for first half of the cycle, indicate Tempo 
-    digitalWrite(Square, HIGH); 
-    digitalWrite(InvSquare, LOW); 
-  } 
-  else {                                                        // Turn it off for the second half 
-    digitalWrite(Square, LOW); 
-    digitalWrite(InvSquare, HIGH); 
-  } 
-/* ===========Update PWM1 Output========================*/
-  PWMshape1 = MIDI_CH[2];
-  switch (PWMshape1) {
-    case 1:
-      PWMdata1 = tableStep;
-      // Saw wave for table 1
-      break;
-    case 2:
-      //Triangle wave for table 2
-      PWMdata1 = tableStep * 2;
-      if (tableStep > 127) PWMdata1 = 256-tableStep*2; 
-      break;
-    case 3:
-      // statements
-      break;
-    case 4: // Step 8
-      // statements
-      PWMdata1 = (tableStep&0b11100000);
-      break;
-    default:
-      PWMdata1 = waveTable[tableStep];
-      break;
+  //  analogWrite(PWM1, waveTable[PWMshape1][tableStep]);              // Writes the value at the current step in the table to Pin 5 as PWM-Signal.  
+    analogWrite(PWM1, PWMdata);
+  
+  /* ===========Update PWM2 Output========================*/
+    PWMdata = getWaveSample(0b00001111&(MIDI_CH[2]+4));
+  //  analogWrite(PWM2, waveTable[PWMshape2][tableStep]);              // Writes the value at the current step in the table to Pin 5 as PWM-Signal.  
+     analogWrite(PWM2, PWMdata);
   }
-//  analogWrite(PWM1, waveTable[PWMshape1][tableStep]);              // Writes the value at the current step in the table to Pin 5 as PWM-Signal.  
-   analogWrite(PWM1, PWMdata1);
-
-/* ===========Update PWM2 Output========================*/
-  PWMshape2 = MIDI_CH[2] + 1;
-//  analogWrite(PWM2, waveTable[PWMshape2][tableStep]);              // Writes the value at the current step in the table to Pin 5 as PWM-Signal.  
-   analogWrite(PWM2, PWMdata2);
-  
 }
-
-  
-/*  delayTime = (analogRead(A0)+1);                           // Reads the voltage at pin A0 and stores a 10-Bit value in "delayTime". (between 0 and 1023). Adds 1 so "delayTime" cant be zero. 
-  delayTime = 10;
-  Serial.print("A0 = ");
-  Serial.print(delayTime-1);
-  
-  shape = (analogRead(A1) >> 8);                            // Reads the voltage at pin A1 and divides by 256 to get a Value between 0 and 3 to select the waveshape. 
-  shape = (2);                            //  
-  shape2 = (3);                            //  
-*/
-  
-/*  Serial.print("  Step = ");
-  Serial.print(tableStep);
-  Serial.print("  Value = ");
-  Serial.println(waveTable[shape2][tableStep]);
-  delay(delayTime);                                         // Waits for the Amount of Milliseconds set by "delayTime". 
-                                                            // Fastest setting will cycle at ~4hz, slowest setting is somewhat over 4 minutes. 
-                                                            // Could use some finetuning. 
-*/
-}
-
 
 /* =====================================================
 ==============Check encoder interrupt===================
