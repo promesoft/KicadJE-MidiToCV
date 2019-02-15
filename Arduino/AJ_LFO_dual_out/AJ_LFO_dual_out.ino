@@ -63,7 +63,7 @@ void setup() {
   digitalWrite(LED2, HIGH);
   digitalWrite(LED3, HIGH);
   digitalWrite(LED4, HIGH);
-  delay(300);
+  delay(150);
 
   updateLED();
 
@@ -96,7 +96,7 @@ void setup() {
   PCMSK1 = 0b00000111; 
 
 //Safety before MIDI takes over so the arduino can be reprogrammed
-  delay(1000); 
+  delay(800); 
 /* =====================================================*/
   setupMidi();
 } 
