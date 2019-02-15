@@ -181,11 +181,14 @@ char getWaveSample(unsigned int PWMshape){
         }
         break;
       case 15: // pulse 6% duty cycle
-        if (tableStep < 15 ) {
+        PWMdata = 0;
+        if (tableStep < 64) {
           PWMdata = 255;
         }
-        else {
-          PWMdata = 0;
+        if (tableStep > 128) {
+          if (tableStep < 192) {
+            PWMdata = 255;
+          }
         }
         break;
       default:
