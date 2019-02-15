@@ -169,7 +169,8 @@ if ( millis() >= (lastwaveupdate+delayTime) ){
 
 /* ===========Update PWM2 Output========================*/
   PWMshape2 = MIDI_CH[2] + 1;
-  analogWrite(PWM2, waveTable[PWMshape2][tableStep]);              // Writes the value at the current step in the table to Pin 5 as PWM-Signal.  
+//  analogWrite(PWM2, waveTable[PWMshape2][tableStep]);              // Writes the value at the current step in the table to Pin 5 as PWM-Signal.  
+   analogWrite(PWM2, PWMdata2);
   
 }
 
