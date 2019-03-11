@@ -11,6 +11,11 @@ Set on hold - MK2 is in progress ATM
 | production  | ordered  | OK |
 |  | produced | OK |
 |  | delivered | OK |
+| ------------- | ------------- | ------------- |
+| SOFTWARE | LFO | OK |
+| SOFTWARE | MIDI MAP | OK - Stage 1 |
+| SOFTWARE | CV | Ongoing |
+
 ## Preliminary validation
 | Test  | Detail | Status |
 | ------------- | ------------- | ------------- |
@@ -19,8 +24,8 @@ Set on hold - MK2 is in progress ATM
 | | Knobs | OK |
 | Initial Technical Test | MIDI IN | OK |
 | Initial Technical Test | MIDI OUT | OK (to USB adapter) |
-| Initial Product Test | MIDI IN/OUT| OK |
-| Initial Product Test | MIDI IN / CV OUT| OK |
+| Initial Product Test | MIDI IN/OUT MAPPER| OK |
+| Initial Product Test | MIDI IN / CV OUT / GATE OUT| OK |
 | Initial Product Test | LFO OUT| OK (use different pinout) |
 
 ## Secondary validation
@@ -31,8 +36,10 @@ Set on hold - MK2 is in progress ATM
 | Quality | LFO | Very usable |
 | Quality | MIDI IN | |
 | Quality | MIDI to CV | |
+| Quality | MIDI to GATE | |
 | Long Term Product Test | MIDI IN |  |
 | Long Term Product Test | CV OUT |  |
+| Long Term Product Test | GATE OUT |  |
 | Long Term Product Test | LFO OUT | OK |
 ### Issues and Notes
 Please note that the PIN1 and PIN2 are GATE. This is note described clearly in http://www.doepfer.de/a100_man/a100t_e.htm and needs to be noted when soldering the IDC header or when cabling if a Pin header has been mounted.
