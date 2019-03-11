@@ -74,7 +74,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22187E.pdf" H 6950 6000 50 
 	1    0    0    -1  
 $EndComp
 $Comp
-L aj_adc_dac:MCP4725module IC2
+L Kicad-Midi2CV-rescue:MCP4725module-aj_adc_dac IC2
 U 1 1 5C1C16C6
 P 6950 4350
 F 0 "IC2" H 7250 4650 60  0000 L CNN
@@ -85,7 +85,7 @@ F 3 "" H 6950 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L aj_adc_dac:MCP4725module IC1
+L Kicad-Midi2CV-rescue:MCP4725module-aj_adc_dac IC1
 U 1 1 5C1C326B
 P 6950 3300
 F 0 "IC1" H 7250 3600 60  0000 L CNN
