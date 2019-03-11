@@ -4,6 +4,36 @@ Midi to CV in Eurorack or as standalone
 ## Status - Rev B - Ongoing PCB layout and Sch update
 Set on hold - MK2 is in progress ATM
 ## Status - Rev A Mounted - Midi code in progress
+| Stage  | Detail | Status |
+| ------------- | ------------- | ------------- |
+| create material  | sch/pcb | produced Rev A  |
+| | gerber | produced and uploaded RevA |
+| production  | ordered  | OK |
+|  | produced | OK |
+|  | delivered | OK |
+## Preliminary validation
+| Test  | Detail | Status |
+| ------------- | ------------- | ------------- |
+| Initial Inspection | Visual - Component Mounting | NOT OK |
+| Initial Technical Test | Base operation | MIDI OUT NOT OK |
+| | Knobs | OK |
+| Initial Technical Test | MIDI IN | OK |
+| Initial Technical Test | MIDI OUT | OK (to USB adapter) |
+| Initial Product Test | MIDI IN/OUT| OK |
+| Initial Product Test | MIDI IN / CV OUT| OK |
+| Initial Product Test | LFO OUT| OK (use different pinout) |
+
+## Secondary validation
+| Test  | Detail | Status |
+| ------------- | ------------- |------------- |
+| Product Test | MIDI IN/OUT| OUT - FAIL on Roland keyboard |
+| Product Test | LFO on DIO6 and 9 with ext RC | OK ! |
+| Quality | LFO | Very usable |
+| Quality | MIDI IN | |
+| Quality | MIDI to CV | |
+| Long Term Product Test | MIDI IN |  |
+| Long Term Product Test | CV OUT |  |
+| Long Term Product Test | LFO OUT | OK |
 ### Issues and Notes
 Please note that the PIN1 and PIN2 are GATE. This is note described clearly in http://www.doepfer.de/a100_man/a100t_e.htm and needs to be noted when soldering the IDC header or when cabling if a Pin header has been mounted.
  * The two pots on the breakout board are too close for adding a knob
