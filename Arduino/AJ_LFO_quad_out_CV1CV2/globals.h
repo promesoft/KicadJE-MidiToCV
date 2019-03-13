@@ -29,7 +29,7 @@
 #define LEDsel2 11
 
 #define Gate1 8
-#define Gate2 9
+#define Gate2 7
 /*#define Gate1 6
 #define Gate2 7
 #define Gate3 8
